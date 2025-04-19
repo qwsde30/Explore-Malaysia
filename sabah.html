@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Sabah - Explore Malaysia</title>
+
+    <!-- Bootstrap CSS (use the latest stable version) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome (latest stable version) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="sabahimg/favicon.jpg" type="image/jpeg">
+
+
+
+    <!-- Custom CSS file for additional styling -->
+    <link rel="stylesheet" href="sabah.css">
+
+    
+
+</head>
+
+<body>
+    <!-- ========== NAVIGATION BAR ========== -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top custom-navbar shadow">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-car-side me-2 fs-3 text-light"></i>
+                <span class="fw-bold">Explore Sabah</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="destinationsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Destinations
+                        </a>
+                        <ul class="dropdown-menu shadow-sm" aria-labelledby="destinationsDropdown">
+                            <li><a class="dropdown-item" href="penang.html">Penang</a></li>
+                            <li><a class="dropdown-item" href="johor.html">Johor</a></li>
+                            <li><a class="dropdown-item" href="selangor.html">Selangor</a></li>
+                            <li><a class="dropdown-item" href="perak.html">Perak</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with background image -->
+    <header id="hero" class="hero-section" style="background-image: url('sabahimg/sabahmainpage.jpg');">
+        <div class="container text-white">
+            <h1>Explore the Wonders of Sabah</h1>
+            <p>Discover breathtaking landscapes, diverse wildlife, and rich indigenous cultures in Malaysia's "Land Below the Wind".</p>
+        </div>
+    </header>
+
+    <!-- Navigation Buttons -->
+    <div class="navigation-buttons d-flex justify-content-center gap-3 flex-wrap my-5">
+        <a href="#about" class="nav-btn btn btn-outline-primary shadow-lg">About</a>
+        <a href="#attractions" class="nav-btn btn btn-outline-success shadow-lg">Attractions</a>
+        <a href="#food" class="nav-btn btn btn-outline-danger shadow-lg">Food</a>
+        <a href="#hotels" class="nav-btn btn btn-outline-warning shadow-lg">Hotels</a>
+        <a href="#travel-tips" class="nav-btn btn btn-outline-info shadow-lg">Travel Tips</a>
+    </div>
+
+    <!-- Why Visit Sabah Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Column: Content -->
+                <div class="col-lg-6">
+                    <div class="about-content pe-lg-4">
+                        <h2 class="section-title mb-4 text-dark fw-bold">Discover the Land Below the Wind</h2>
+                        <p class="lead text-muted mb-4">Sabah, Malaysia's northern Borneo state, offers a unique blend of pristine nature, diverse wildlife, and rich indigenous cultures.</p>
+
+                        <div class="features mt-4">
+                            <!-- Nature Feature -->
+                            <div class="feature-item d-flex align-items-start mb-4">
+                                <div class="icon-box me-4 text-primary">
+                                    <i class="fas fa-mountain fa-3x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-dark fw-semibold">Spectacular Nature</h4>
+                                    <p class="text-muted">From Mount Kinabalu to Danum Valley, Sabah boasts some of the world's most biodiverse ecosystems and breathtaking landscapes.</p>
+                                </div>
+                            </div>
+
+                            <!-- Wildlife Feature -->
+                            <div class="feature-item d-flex align-items-start mb-4">
+                                <div class="icon-box me-4 text-primary">
+                                    <i class="fas fa-paw fa-3x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-dark fw-semibold">Unique Wildlife</h4>
+                                    <p class="text-muted">Spot orangutans, proboscis monkeys, pygmy elephants, and marine life in their natural habitats.</p>
+                                </div>
+                            </div>
+
+                            <!-- Culture Feature -->
+                            <div class="feature-item d-flex align-items-start">
+                                <div class="icon-box me-4 text-primary">
+                                    <i class="fas fa-archway fa-3x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-dark fw-semibold">Rich Culture</h4>
+                                    <p class="text-muted">Experience the traditions of Sabah's diverse ethnic groups including Kadazan-Dusun, Bajau, and Murut communities.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Image -->
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <img src="sabahimg/sabahsabah.jpg" alt="Mount Kinabalu" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Column: Image -->
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <img src="sabahimg/sabah.webp" alt="Kota Kinabalu" class="img-fluid rounded shadow-lg" />
+                </div>
+                <!-- Right Column: Content -->
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="stats-box p-4 shadow-sm bg-white rounded">
+                        <h3 class="text-center mb-4">Sabah at a Glance</h3>
+                        <div class="row text-center">
+                            <!-- Area -->
+                            <div class="col-6 mb-4">
+                                <div class="stat-item">
+                                    <div class="stat-number text-primary counter" data-target="73">1</div>
+                                    <div class="stat-label">Thousand km² Area</div>
+                                </div>
+                            </div>
+                            <!-- Population -->
+                            <div class="col-6 mb-4">
+                                <div class="stat-item">
+                                    <div class="stat-number text-primary counter" data-target="3.5">1</div>
+                                    <div class="stat-label">Million People</div>
+                                </div>
+                            </div>
+                            <!-- Heritage Sites -->
+                            <div class="col-6 mb-4">
+                                <div class="stat-item">
+                                    <div class="stat-number text-primary counter" data-target="2">1</div>
+                                    <div class="stat-label">UNESCO Sites</div>
+                                </div>
+                            </div>
+                            <!-- Ethnic Groups -->
+                            <div class="col-6 mb-4">
+                                <div class="stat-item">
+                                    <div class="stat-number text-primary counter" data-target="30">1</div>
+                                    <div class="stat-label">Ethnic Groups</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-3">
+                            <a href="gallery.html" class="btn btn-outline-primary">Explore Gallery</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Sabah Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h2 class="section-title mb-4">About Sabah</h2>
+                <p class="lead">Sabah, known as "The Land Below the Wind," is a Malaysian state located on the northern portion of Borneo, the third largest island in the world.</p>
+                <p>Sabah is renowned for its spectacular biodiversity, with lush rainforests that are among the oldest in the world, majestic mountains including Mount Kinabalu (the highest peak in Southeast Asia), and pristine islands with some of the best diving spots globally like Sipadan Island.</p>
+                <p>The state is home to diverse ethnic groups, each with their own unique cultures, traditions, and languages. Sabah's capital, Kota Kinabalu, is a vibrant city that blends modernity with traditional elements.</p>
+                <a href="https://en.wikipedia.org/wiki/Sabah" target="_blank" class="btn btn-primary mt-3">
+                    <i class="fas fa-external-link-alt me-2"></i>Learn more about Sabah on Wikipedia
+                </a>
+            </div>
+            <!-- Image Column - Added this new column -->
+            <div class="col-lg-4 mt-4 mt-lg-0">
+                <img src="sabahimg/sabahflag.webp" alt="Sabah Flag" class="img-fluid rounded shadow">
+                <!-- Optional: Add a caption -->
+                <p class="text-muted mt-2 text-center">The Sabah flag symbolizes the state's natural heritage and unity.</p> 
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Top Attractions Section -->
+    <section id="attractions" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Top Attractions in Sabah</h2>
+            <div class="row">
+                <!-- First Attraction: Kota Kinabalu -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="sabahimg/kotakinabalu.jpg" class="card-img-top" alt="Kota Kinabalu">
+                        <div class="card-body">
+                            <h3 class="card-title">Kota Kinabalu</h3>
+                            <p class="card-text">The capital of Sabah, known for its waterfront, lively markets, and gateway to nearby islands.</p>
+                            <p><strong>Phone:</strong> +60 88-486 330</p>
+                            <p><strong>Hours:</strong> Open 24 hours daily</p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/place/Kota+Kinabalu,+Sabah"
+                                    target="_blank">Kota Kinabalu, Sabah</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Attraction: Mari Mari Cultural Village -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="sabahimg/marimari.jpg" class="card-img-top" alt="Mari Mari Cultural Village">
+                        <div class="card-body">
+                            <h3 class="card-title">Mari Mari Cultural Village</h3>
+                            <p class="card-text">An immersive experience of Sabah's ethnic groups with traditional houses, crafts, and cultural performances.</p>
+                            <p><strong>Phone:</strong> +60 88-260 501</p>
+                            <p><strong>Hours:</strong> Daily 10:00 AM to 5:00 PM</p>
+                            <p><strong>Website:</strong> <a href="https://www.marimariculturalvillage.com" target="_blank">marimariculturalvillage.com</a></p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/place/Mari+Mari+Cultural+Village"
+                                    target="_blank">Kampung Kionsom, Inanam, 88450 Kota Kinabalu, Sabah</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Attraction: Mount Kinabalu -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="sabahimg/mountkinabalu.jpg" class="card-img-top" alt="Mount Kinabalu">
+                        <div class="card-body">
+                            <h3 class="card-title">Mount Kinabalu</h3>
+                            <p class="card-text">The tallest mountain in Malaysia and a UNESCO World Heritage Site, popular for hiking and breathtaking views.</p>
+                            <p><strong>Phone:</strong> +60 88-889 888</p>
+                            <p><strong>Hours:</strong> Park open daily 7:00 AM to 5:00 PM</p>
+                            <p><strong>Website:</strong> <a href="https://www.mountkinabalu.com" target="_blank">mountkinabalu.com</a></p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/place/Mount+Kinabalu"
+                                    target="_blank">Kinabalu Park, 89300 Ranau, Sabah</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Attractions -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="sabahimg/tanjungaru.jpg" class="card-img-top" alt="Tanjung Aru Beach">
+                        <div class="card-body">
+                            <h3 class="card-title">Tanjung Aru Beach</h3>
+                            <p class="card-text">Attractive with the islands as a backdrop and the lovely casuarina trees. It has a peaceful vibe, a relaxing place to watch the sun go down.</p>
+                            <p><strong>Hours:</strong> Open 24 hours daily</p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/place/Tanjung+Aru+Beach"
+                                    target="_blank">Tanjung Aru, 88100 Kota Kinabalu, Sabah</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="sabahimg/masjidbandaraya.jpg" class="card-img-top" alt="Masjid Bandaraya Kota Kinabalu">
+                        <div class="card-body">
+                            <h3 class="card-title">Masjid Bandaraya Kota Kinabalu</h3>
+                            <p class="card-text">A stunning mosque built on a man-made lagoon, often called the "floating mosque" for its beautiful reflection on the water.</p>
+                            <p><strong>Phone:</strong> +60 88-253 999</p>
+                            <p><strong>Hours:</strong> 8:00 AM - 5:00 PM (Closed during prayer times)</p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/place/Kota+Kinabalu+City+Mosque"
+                                    target="_blank">Jalan Pasir, Jalan Teluk Likas, Kampung Likas, 88400 Kota Kinabalu, Sabah</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="sabahimg/kinabatangan.jpeg" class="card-img-top" alt="Kinabatangan River">
+                        <div class="card-body">
+                            <h3 class="card-title">Kinabatangan River</h3>
+                            <p class="card-text">A biodiverse river region known for wildlife cruises spotting monkeys, crocodiles, elephants, and exotic birds.</p>
+                            <p><strong>Phone:</strong> +60 88-240 584</p>
+                            <p><strong>Hours:</strong> Best time for cruises: 6:00 AM and 4:00 PM</p>
+                            <p><strong>Website:</strong> <a href="https://www.sabahtourism.com/destination/kinabatangan" target="_blank">sabahtourism.com</a></p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/place/Kinabatangan+River"
+                                    target="_blank">Kinabatangan, Sabah</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="sabahimg/Sapiisland.jpg" class="card-img-top" alt="Sapi Island">
+                        <div class="card-body">
+                            <h3 class="card-title">Sapi Island</h3>
+                            <p class="card-text">A tropical paradise near Kota Kinabalu, known for its clear waters, white sandy beaches, and vibrant marine life—perfect for snorkeling and relaxation.</p>
+                            <p><strong>Phone:</strong> +60 88-248 115</p>
+                            <p><strong>Hours:</strong> 8:30 AM - 4:00 PM</p>
+                            <p><strong>Website:</strong> <a href="https://www.sabahtourism.com/destination/tunku-abdul-rahman-park" target="_blank">sabahtourism.com</a></p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/place/Sapi+Island"
+                                    target="_blank">Tunku Abdul Rahman Marine Park, Kota Kinabalu, Sabah</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="sabahimg/danumvalley.jpg" class="card-img-top" alt="Danum Valley">
+                        <div class="card-body">
+                            <h3 class="card-title">Danum Valley</h3>
+                            <p class="card-text">A pristine rainforest conservation area in Sabah, renowned for its rich biodiversity and untouched natural beauty.</p>
+                            <p><strong>Phone:</strong> +60 89-880 441</p>
+                            <p><strong>Hours:</strong> Access by guided tours only</p>
+                            <p><strong>Website:</strong> <a href="https://www.danumvalleyconservationarea.com" target="_blank">danumvalleyconservationarea.com</a></p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/place/Danum+Valley+Conservation+Area"
+                                    target="_blank">Lahad Datu, Sabah</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="sabahimg/sipadanisland.jpg" class="card-img-top" alt="Sipadan Island">
+                        <div class="card-body">
+                            <h3 class="card-title">Sipadan Island</h3>
+                            <p class="card-text">A tropical paradise with white sandy beaches, crystal-clear waters, and world-class diving spots.</p>
+                            <p><strong>Phone:</strong> +60 89-765 200</p>
+                            <p><strong>Hours:</strong> Access by diving operators only</p>
+                            <p><strong>Website:</strong> <a href="https://www.sabahtourism.com/destination/sipadan-island" target="_blank">sabahtourism.com</a></p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/place/Sipadan+Island"
+                                    target="_blank">Semporna, Sabah</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Must-Try Foods in Sabah Section -->
+    <section id="food" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Must-Try Foods in Sabah</h2>
+            <div class="container text-center text-primary">
+                <p><strong>Tap to explore the flavors of your choice!</strong></p>
+            </div><br>
+
+            <!-- First row with 3 food items -->
+            <div class="row">
+                <!-- Food Item 1: Sang Nyuk Mee -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="sabahimg/SangNyukMee.jpg" class="card-img-top" alt="Sang Nyuk Mee">
+                                <div class="card-body">
+                                    <h3 class="card-title">Sang Nyuk Mee</h3>
+                                    <p class="card-text">A beloved noodle dish featuring tender slices of pork served in a rich, flavorful broth, typically accompanied by noodles either in soup or dressed in dark soy sauce.</p>
+
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i><strong>Restaurant:</strong> Sinsuran Sang Nyuk Mee</p>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> 21, Lrg Lintas Square, Lintas Plaza, 88300 Kota Kinabalu, Sabah</p>
+                                <p><i class="fas fa-clock"></i><strong>Opening Hours:</strong> 7:00 AM - 11:00 PM (Open on all days)</p>
+                                <p><i class="fas fa-info-circle"></i><strong>Service options:</strong> Doesn't accept reservations · Indoor dining</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> 016-553 7320</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=21,+Lrg+Lintas+Square,+Lintas+Plaza,+88300+Kota+Kinabalu,+Sabah"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Item 2: Ngiu Chap -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="sabahimg/ngiuchap.jpg" class="card-img-top" alt="Ngiu Chap">
+                                <div class="card-body">
+                                    <h3 class="card-title">Ngiu Chap</h3>
+                                    <p class="card-text">Signature beef mix cooked with rice vermicelli noodles in a scrumptious hearty broth.</p>
+
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Recommended Cafe</h3>
+                                <p><i class="fas fa-utensils"></i><strong>Cafe:</strong> Kah Hiong Ngiu Chap</p>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> 2-0-10, Lorong Taman Nosoob Jaya Phase 2, Kolam Centre, 93450 Kota Kinabalu, Sabah</p>
+                                <p><i class="fas fa-clock"></i><strong>Opening Hours:</strong> 7:00 AM - 3:00 PM (Monday to Sunday)</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> 016-826 9699</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=2-0-10,+Lorong+Taman+Nosoob+Jaya+Phase+2,+Kolam+Centre,+93450+Kota+Kinabalu,+Sabah"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Item 3: Hinava -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="sabahimg/hinava.jpg" class="card-img-top" alt="Hinava">
+                                <div class="card-body">
+                                    <h3 class="card-title">Hinava</h3>
+                                    <p class="card-text">A raw fish dish marinated in lime and served with red chilli, ginger, shallots, Banbangan seeds, and sometimes bitter gourd or prawns.</p>
+
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-store"></i><strong>Store:</strong> Asiarasa Cafe Citarasa Kampung</p>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> D-0-3, Lorong Capital, Sabah, 88400 Kota Kinabalu</p>
+                                <p><i class="fas fa-clock"></i><strong>Opening Hours:</strong> 9:30 AM - 6:00 PM (Closed on Sunday)</p>
+                                <p><i class="fas fa-info-circle"></i><strong>Service options:</strong> Has Outdoor Seating</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> 088-447 533</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=D-0-3,+Lorong+Capital,+Sabah,+88400+Kota+Kinabalu"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End of first row -->
+
+            <!-- Second row with 3 food items -->
+            <div class="row">
+                <!-- Food Item 4: Pinasakan -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="sabahimg/pinasakan.jpg" class="card-img-top" alt="Pinasakan">
+                                <div class="card-body">
+                                    <h3 class="card-title">Pinasakan</h3>
+                                    <p class="card-text">Pinasakan is a traditional Kadazan-Dusun dish made from braised fish cooked with turmeric, tangy takob-akob (wild fruit), and spices, known for its sour and savory flavor.</p>
+
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i><strong>Restaurant:</strong> D'Place Kinabalu</p>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> L2.01 & L2.02, 2nd Floor, Plaza Shell, 29 Jalan Tunku Abdul Rahman, 88000, Kota Kinabalu</p>
+                                <p><i class="fas fa-clock"></i><strong>Opening Hours:</strong> 11:30 AM - 10:00 PM (open daily)</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> 016-833 2381</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=L2.01+%26+L2.02,+2nd+Floor,+Plaza+Shell,+29+Jalan+Tunku+Abdul+Rahman,+88000,+Kota+Kinabalu"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Item 5: Linopot -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="sabahimg/linopot.jpg" class="card-img-top" alt="Linopot">
+                                <div class="card-body">
+                                    <h3 class="card-title">Linopot</h3>
+                                    <p class="card-text">A traditional dish from the Kadazan-Dusun people, often consisting of rice wrapped in leaves, typically served with wild boar or fish.</p>
+
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Buy</h3>
+                                <p><i class="fas fa-store"></i><strong>Shop:</strong> OITOM Restaurant</p>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> Unit No B-1-12, Block B,1st Floor, Sutera Avenue Lorong Lebuh Sutera, Off, 1, Sutera Avenue, 88100 Kota Kinabalu, Sabah</p>
+                                <p><i class="fas fa-clock"></i><strong>Opening Hours:</strong> 7:00 PM - 11:00 PM (Closed on Tuesdays and Wednesdays)</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> 014-329 9375</p>
+                                <p><i class="fas fa-info-circle"></i><strong>Service options:</strong> Reservations required · Serves great cocktails · Serves vegetarian dishes</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=Unit+No+B-1-12,+Block+B,1st+Floor,+Sutera+Avenue+Lorong+Lebuh+Sutera,+Off,+1,+Sutera+Avenue,+88100+Kota+Kinabalu,+Sabah"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Item 6: Ambuyat -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="sabahimg/ambuyat.jpg" class="card-img-top" alt="Ambuyat">
+                                <div class="card-body">
+                                    <h3 class="card-title">Ambuyat</h3>
+                                    <p class="card-text">A sticky, glue-like substance made from sago starch and eaten with a bamboo stick called a "chandas," known for its bland taste but is often enjoyed with flavorful dipping sauces.</p>
+
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i><strong>Restaurant:</strong> THE NATIVE CAFE</p>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> THE NATIVE CAFE (Inside Hotel N5), HOTEL N5 1 JALAN PINTAS, PENAMPANG PENAMPANG, 88300 Kota Kinabalu, Sabah</p>
+                                <p><i class="fas fa-clock"></i><strong>Opening Hours:</strong> 6:30 AM - 11:00 PM (Open daily)</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> 016-833 2381</p>
+                                <p><i class="fas fa-info-circle"></i><strong>Service options:</strong> Has outdoor seating · Has Wi-Fi</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=THE+NATIVE+CAFE+(Inside+Hotel+N5),+HOTEL+N5+1+JALAN+PINTAS,+PENAMPANG+PENAMPANG,+88300+Kota+Kinabalu,+Sabah"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End of second row -->
+        </div>
+    </section>
+
+    <!-- A Hotel Lover's Guide to Sabah Section -->
+    <section id="hotels" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">A Hotel Lover's Guide to Sabah</h2>
+            <div class="container text-center text-primary">
+                <p><strong>Hover to explore the perfect stay for your trip!</strong></p>
+            </div><br>
+
+            <!-- First row with 2 hotel items -->
+            <div class="row">
+                <!-- Hotel 1: Shangri-La's Tanjung Aru Resort -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="sabahimg/shangrila.jpg" class="card-img-top" alt="Shangri-La's Tanjung Aru Resort">
+                                <div class="card-body">
+                                    <h3 class="card-title">Shangri-La's Tanjung Aru Resort</h3>
+                                    <p class="card-text">Luxurious beachfront resort with stunning sunset views, multiple pools, and world-class dining.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> 20 Jalan Aru, Tanjung Aru, 88100 Kota Kinabalu, Sabah</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> +60 88-327 888</p>
+                                <p><i class="fas fa-globe"></i><strong>Website:</strong> <a
+                                        href="https://www.shangri-la.com/kotakinabalu/tanjungaruresort/" target="_blank">shangri-la.com</a></p>
+                                <p><i class="fas fa-clock"></i><strong>Check-in:</strong> 3:00 PM | <strong>Check-out:</strong> 12:00 PM</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=20+Jalan+Aru,+Tanjung+Aru,+88100+Kota+Kinabalu,+Sabah"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 2: The Magellan Sutera Resort -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="sabahimg/magellan.jpg" class="card-img-top" alt="magellan sutera resort">
+                                <div class="card-body">
+                                    <h3 class="card-title">The Magellan Sutera Resort</h3>
+                                    <p class="card-text">A luxurious 5-star beachfront retreat in Kota Kinabalu, Malaysia, renowned for its ethnic-themed architecture, expansive pools, and panoramic sea views.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong>The Magellan Sutera Resort, 1 Sutera Harbour Boulevard, Sutera Harbour, 88100 Kota Kinabalu, Sabah</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> +60 88-318 888</p>
+                                <p><i class="fas fa-globe"></i><strong>Website:</strong> <a
+                                        href="https://www.suteraharbour.com/the-magellan-sutera-resort/" target="_blank"><magellan class="com"></magellan></a></p>
+                                <p><i class="fas fa-clock"></i><strong>Check-in:</strong> 3:00 PM | <strong>Check-out:</strong> 12:00 PM</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://maps.app.goo.gl/6syjoSCzqa3uobM97"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 3: Gaya Island Resort -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="sabahimg/gayaisland.jpg" class="card-img-top" alt="Gaya Island Resort">
+                                <div class="card-body">
+                                    <h3 class="card-title">Gaya Island Resort, an SLH Hotel</h3>
+                                    <p class="card-text">A luxurious eco-retreat offering hillside villas amidst ancient rainforests, panoramic views of Mount Kinabalu, and immersive cultural and marine conservation experiences.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong>Malohom Bay Tunku Abdul Rahman, Marine Park, 88000 Kota Kinabalu, Sabah</p>                                </p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> +60 18-939 1100</p>
+                                <p><i class="fas fa-globe"></i><strong>Website:</strong> <a
+                                        href="https://www.gayaislandresort.com" target="_blank">gayaislandresort.com</a></p>
+                                <p><i class="fas fa-clock"></i><strong>Check-in:</strong> 3:00 PM to 9:00PM| <strong>Check-out:</strong> 11:00 AM</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://maps.app.goo.gl/T6bjNZXE1nRqNLWb6"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Hotel 4: Hilton Kota Kinabalu -->
+                 <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="sabahimg/hilton.jpg" class="card-img-top" alt="Hilton Kota Kinabalu">
+                                <div class="card-body">
+                                    <h3 class="card-title">Hilton Kota Kinabalu</h3>
+                                    <p class="card-text">A modern 5-star hotel in the city center, featuring stylish rooms, a rooftop pool, multiple dining options, and easy access to top attractions and the airport.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong>Jln Tunku Abdul Rahman, Asia City, 88000 Kota Kinabalu, Sabah</p>                                
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> +60 883 5600</p>
+                                <p><i class="fas fa-globe"></i><strong>Website:</strong> <a
+                                        href="https://www.hilton.com/en/hotels/bkikkhi-hilton-kota-kinabalu/" target="_blank">bkikkhi-hilton-kota-kinabalu.com</a></p>
+                                <p><i class="fas fa-clock"></i><strong>Check-in:</strong> 3:00 PM| <strong>Check-out:</strong> 12:00 PM</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://maps.app.goo.gl/FAPSPq2BihG4vNjf8"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+             <!-- Third row with 2 hotel items -->
+            <div class="row">
+                <!-- Hotel 5: Kudat Riviera -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="sabahimg/kudat.jpg" class="card-img-top" alt="Kudat Riviera">
+                                <div class="card-body">
+                                    <h3 class="card-title">Kudat Riviera</h3>
+                                    <p class="card-text">An exclusive beachfront retreat on the northern tip of Borneo, offering luxurious private villas set amid pristine beaches, rolling hills, and lush coconut groves.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong>89050 Kudat, Sabah</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> +60 886 16161</p>
+                                <p><i class="fas fa-globe"></i><strong>Website:</strong> <a
+                                        href="https://kudatriviera.com.my" target="_blank">kudatriviera.com</a>
+                                </p>
+                                <p><i class="fas fa-clock"></i><strong>Check-in:</strong> 2:00 PM to 11:00 PM |
+                                    <strong>Check-out:</strong> By 11:00 AM
+                                </p>
+                                <div class="text-center mt-3">
+                                    <a href="https://maps.app.goo.gl/jLXnXeKs3gNXr4VFA"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 6: Hyatt Regency Kinabalu -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="sabahimg/regency.webp" class="card-img-top" alt="Hyatt Regency Kinabalu">
+                                <div class="card-body">
+                                    <h3 class="card-title">Hyatt Regency Kinabalu</h3>
+                                    <p class="card-text">A centrally located 5-star hotel in Kota Kinabalu, offering spacious rooms with sea or city views, diverse dining options, and easy access to shopping and waterfront attractions.<p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong>88991, Jalan Datuk Salleh Sulong, Kota Kinabalu, 88804 Kota Kinabalu, Sabah</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> +60 88-221 234</p>
+                                <p><i class="fas fa-globe"></i><strong>Website:</strong> <a
+                                        href="https://www.hyatt.com/hyatt-regency/en-US/bkiki-hyatt-regency-kinabalu" target="_blank">hyatt-regency.com</a>
+                                </p>
+                                <p><i class="fas fa-clock"></i><strong>Check-in:</strong> 3:00 PM |
+                                    <strong>Check-out:</strong> 12:00 PM
+                                </p>
+                                <div class="text-center mt-3">
+                                    <a href="https://maps.app.goo.gl/RNBEdJH3s7YtgKDg9"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script>
+        // Wait for the DOM to fully load
+        document.addEventListener('DOMContentLoaded', function () {
+            // Select all cards with class 'card1'
+            const cards = document.querySelectorAll('.card1');
+
+            // Add event listener for each card
+            cards.forEach(card => {
+                card.addEventListener('click', function () {
+                    // Toggle the 'flipped' class
+                    card.classList.toggle('flipped');
+                });
+            });
+        });
+    </script>
+
+
+
+
+    <!-- Travel Tips in Sabah -->
+    <section id="travel-tips" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="section-title text-center">Essential Travel Tips for You in Sabah</h2>
+            <p class="text-center mb-5">Add some spark to your trip with vibrant experiences that lighten your journey and bring it to life!</p>
+
+            <div class="row g-4">
+                <!-- First Row -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100">
+                        <div class="tip-icon bg-primary text-white">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Best Time to Visit Sabah</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Visit between March and October for drier weather, 
+                                ideal for outdoor activities.</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Avoid the monsoon season (November to February)
+                                 if planning beach or island trips.</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>June–August is peak season for Mount Kinabalu climbs—book early.</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a
+                                    href="https://sabahtourism.com"
+                                    target="_blank">Sabah Tourism Board</a></small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100">
+                        <div class="tip-icon bg-success text-white">
+                            <i class="fas fa-subway"></i>
+                        </div>
+                        <h3>Getting Around Sabah</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Long-distance buses connect
+                                 major towns (KK to Sandakan, Tawau).</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Rent a 4WD for exploring rural
+                                 areas like Kinabatangan.</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Domestic flights are efficient 
+                                for traveling between regions.</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a href="https://www.lonelyplanet.com/destinations/borneo"
+                                    target="_blank">Lonely Planet Borneo</a></small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100">
+                        <div class="tip-icon bg-warning text-white">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <h3>Accommodation Advice</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Stay in Kota Kinabalu for urban 
+                                conveniences and island access.</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Choose nature lodges in 
+                                Kinabatangan for wildlife viewing.</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Select beach resorts in 
+                                Tunku Abdul Rahman Marine Park.</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Consider homestays in 
+                                Kundasang for Mount Kinabalu views.</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a href="https://www.booking.com/region/my/sabah.en.html"
+                                    target="_blank">Booking.com</a></small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100">
+                        <div class="tip-icon bg-danger text-white">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3 class="mt-3">Cultural Events & Seasons</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Attend Kaamatan Festival 
+                                (May) for harvest celebrations.</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Visit during Sabah Fest (May) 
+                                for cultural performances.</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Time your trip with the Borneo Bird
+                                 Festival (October)</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Experience Regatta Lepa (April), a vibrant 
+                                Bajau water village festival featuring decorated boats and traditional dances.</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a
+                                    href="https://sabahtourism.com"
+                                    target="_blank">Sabah Tourism</a></small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100">
+                        <div class="tip-icon bg-purple text-white">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h3 class="mt-3">Nature & Adventure Tips</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Climb Mount Kinabalu—book 
+                                permits months in advance.</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Snorkel/dive at 
+                                Sipadan Island (permits required).</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Spot wildlife in Kinabatangan River
+                                 (proboscis monkeys, pygmy elephants).</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Hike Danum Valley 
+                                for pristine rainforest trails.</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a href="https://www.wwf.org.my/sabahlandscapes/"
+                                    target="_blank">WWF Sabah</a></small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100">
+                        <div class="tip-icon bg-info text-white ">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="mt-3">Safety & Practical Tips</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Avoid isolated areas at night 
+                                in cities; stick to well-lit streets.</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Use insect repellent—malaria/dengue 
+                                risks exist in rural zones.</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Carry cash—credit cards are not 
+                                widely accepted outside cities.</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Respect wildlife—maintain distance 
+                                from animals like orangutans.</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a href="https://www.smartraveller.gov.au/destinations/asia/malaysia"
+                                    target="_blank">Smart Traveller</a></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News Section -->
+<section id="news" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Latest News from Sabah</h2>
+      
+      <!-- Dynamic content will be injected here -->
+      <div id="news-container" class="row g-4">
+        <!-- News cards will appear here via JavaScript -->
+      </div>
+  
+      <!-- Optional fallback message if JS fails -->
+      <noscript>
+        <p class="text-center text-danger">Please enable JavaScript to view the latest news.</p>
+      </noscript>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4 mb-4">
+                  <h4>Explore Malaysia</h4>
+                  <p class="mt-3">Your ultimate guide to discovering the beauty, culture, and adventure that
+                      Malaysia
+                      has to offer.</p>
+                  <div class="social-icons mt-4">
+                      <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                      <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                      <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                  </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                  <h4>Quick Links</h4>
+                  <ul class="list-unstyled mt-3">
+                      <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
+                      <li class="mb-2"><a href="gallery.html" class="text-white">Gallery</a></li>
+                      <li class="mb-2"><a href="contact.html" class="text-white">Contact Us</a></li>
+                      <li class="mb-2"><a href="#" class="text-white">Travel Tips</a></li>
+                      <li class="mb-2"><a href="#" class="text-white">Privacy Policy</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4 mb-4">
+                  <h4>Contact Info</h4>
+                  <ul class="list-unstyled mt-3">
+                      <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Kuala Lumpur, Malaysia</li>
+                      <li class="mb-2"><i class="fas fa-phone me-2"></i> +60 3-1234 5678</li>
+                      <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@exploremalaysia.com</li>
+                  </ul>
+              </div>
+          </div>
+          <hr class="mt-4 bg-light">
+          <div class="text-center pt-3">
+              <p>&copy; 2025 Explore Malaysia. All rights reserved.</p>
+          </div>
+      </div>
+  </footer>
+
+
+    
+
+    <script>
+        document.querySelectorAll('.social-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevents scroll to top
+                console.log("Social icon clicked!");
+            });
+        });
+    </script>
+    <!-- Bootstrap JavaScript for interactivity -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="js/sabah.js"></script>
+
+
+
+    <!--Count number-->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200;
+            let triggered = false;
+
+            const runCounters = () => {
+                counters.forEach(counter => {
+                    const target = parseFloat(counter.getAttribute('data-target'));
+
+                    const updateCount = () => {
+                        const current = parseFloat(counter.innerText);
+                        const increment = target / speed;
+
+                        if (current < target) {
+                            const next = current + increment;
+                            counter.innerText = (target % 1 !== 0)
+                                ? next.toFixed(2)
+                                : Math.ceil(next);
+                            setTimeout(updateCount, 20);
+                        } else {
+                            counter.innerText = (target % 1 !== 0)
+                                ? target.toFixed(2)
+                                : target.toLocaleString();
+                        }
+                    };
+
+                    updateCount();
+                });
+            };
+
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !triggered) {
+                        triggered = true;
+                        runCounters();
+                        obs.disconnect(); // Stop observing once triggered
+                    }
+                });
+            }, {
+                threshold: 0.4 // Trigger when ~40% of the box is visible
+            });
+
+            // Observe the stats box
+            const statsBox = document.querySelector('.stats-box');
+            if (statsBox) {
+                observer.observe(statsBox);
+            }
+        });
+    </script>
+
+
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const newsContainer = document.getElementById("news-container");
+      
+          // Update the path if hosted elsewhere
+          const apiUrl = "news.json"; 
+      
+          fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+              data.forEach(news => {
+                const card = document.createElement("div");
+                card.className = "col-md-4";
+                card.innerHTML = `
+                  <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                      <h5 class="card-title">${news.title}</h5>
+                      <p class="card-text">${news.description}</p>
+                      <a href="${news.link}" class="btn btn-outline-primary btn-sm" target="_blank">Read More</a>
+                    </div>
+                    <div class="card-footer text-muted">Posted on ${new Date(news.date).toLocaleDateString()}</div>
+                  </div>
+                `;
+                newsContainer.appendChild(card);
+              });
+            })
+            .catch(error => {
+              console.error("Failed to load news:", error);
+              newsContainer.innerHTML = `
+                <div class="col text-center text-danger">
+                  Could not load latest news. Please try again later.
+                </div>`;
+            });
+        });
+      </script>
+      
+
+
+
+
+
+
+       
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Johor - Explore Malaysia</title>
+
+    <!-- Bootstrap CSS for styling and responsiveness -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="JohorImage/favicon.ico.jpg" type="image/x-icon">
+
+
+    <!-- Custom CSS file for additional styling -->
+    <link rel="stylesheet" href="johor.css">
+
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-car-side me-2"></i> Explore Johor
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="destinationsDropdown" role="button" data-bs-toggle="dropdown">
+                            Destinations
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="penang.html">Penang</a></li>
+                            <li><a class="dropdown-item" href="sabah.html">Sabah</a></li>
+                            <li><a class="dropdown-item" href="selangor.html">Selangor</a></li>
+                            <li><a class="dropdown-item" href="perak.html">Perak</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with background image -->
+    <header id="hero" class="hero-section" style="background-image: url('JohorImage/Johor1.jpg');">
+        <div class="container text-center text-white">
+            <h1>Unveil the Wonders of Johor</h1>
+            <p>Experience breathtaking landscapes, historic sites, and a vibrant cultural scene in Johor.</p>
+
+        </div>
+    </header>
+    
+    <script>
+        const images = [
+            'JohorImage/Johor1.jpg',
+            'JohorImage/Johor2.png',
+            'JohorImage/Johor3.jpg',
+            'JohorImage/Johor4.avif',
+            'JohorImage/Johor5.jpg',
+
+        ];
+        let index = 0;
+
+        setInterval(() => {
+            index = (index + 1) % images.length;
+            document.getElementById('hero').style.backgroundImage = `url('${images[index]}')`;
+        }, 2000); // Change every 2 seconds
+    </script>
+
+    <!-- Navigation Buttons -->
+    <div class="navigation-buttons d-flex justify-content-center gap-3 flex-wrap my-5">
+        <a href="#history" class="nav-btn btn btn-outline-primary shadow-lg">History</a>
+        <a href="#attractions" class="nav-btn btn btn-outline-success shadow-lg">Attractions</a>
+        <a href="#food" class="nav-btn btn btn-outline-danger shadow-lg">Food</a>
+        <a href="#hotels" class="nav-btn btn btn-outline-warning shadow-lg">Hotels</a>
+        <a href="#travel-tips" class="nav-btn btn btn-outline-info shadow-lg">Travel Tips</a>
+    </div>
+
+    <!-- Why Visit Johor Section -->
+    <section id="about-johor" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-content pe-lg-4">
+                        <h2 class="section-title mb-4">Discover the vibrant Johor</h2>
+                        <p class="lead">Johor is Malaysia's southern gateway, known for its rich culture, vibrant cities, and beautiful islands.</p>
+                        
+                        <div class="features mt-4">
+                            <div class="feature-item d-flex mb-3">
+                                <div class="icon-box me-3 text-primary">
+                                    <i class="fas fa-utensils fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4>Culinary Delights</h4>
+                                    <p>Discover Johor's rich culinary heritage through signature dishes like Laksa Johor, otak-otak, and traditional kopitiam experiences.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item d-flex mb-3">
+                                <div class="icon-box me-3 text-primary">
+                                    <i class="fas fa-gamepad"></i>
+                                </div>
+                                <div>
+                                    <h4>Leisure & Entertainment</h4>
+                                    <p>Enjoy family-friendly attractions in Johor such as Legoland Malaysia, Austin Heights Water & Adventure Park, and interactive indoor play zones.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item d-flex">
+                                <div class="icon-box me-3 text-primary">
+                                    <i class="fas fa-cocktail fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4>Nightlife & Markets</h4>
+                                    <p>Experience Johor's vibrant nightlife with lively night markets (pasar malam), local food courts, and cozy bars.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <img src="JohorImage/JohorBg1.jpg" alt="icity" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about-johor" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Column: Image -->
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <img src="JohorImage/JohorBg2.jpg" alt="circuit" class="img-fluid rounded shadow-lg">
+                </div>
+                <!-- Right Column: Content -->
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="stats-box p-4 shadow-sm bg-white rounded">
+                        <h3 class="text-center mb-4">Johor at a Glance</h3>
+                        <div class="row text-center">
+
+                            <div class="col-6 mb-4">
+                                <div class="stat-item">
+                                    <div class="stat-number text-primary counter" data-target="19166">1</div>
+                                    <div class="stat-label">km² Area</div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-6 mb-4">
+                                <div class="stat-item">
+                                    <div class="stat-number text-primary counter" data-target="4.09">1</div>
+                                    <div class="stat-label">Million Population</div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 mb-4">
+                                <div class="stat-item">
+                                    <div class="stat-number text-primary">Johor Bahru</div>
+                                    <div class="stat-label">Capital City</div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 mb-4">
+                                <div class="stat-item">
+                                    <div class="stat-number text-primary">Manufacturing</div>
+                                    <div class="stat-label">Major Industry</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-3">
+                            <a href="gallery.html" class="btn btn-outline-primary">Explore Gallery</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>        
+
+    <!-- Callout for Johor History -->
+    <div id="history" class="row justify-content-center mt-5">
+        <div class="col-md-10 col-lg-8">
+            <div class="p-5 text-center rounded-4 shadow-lg position-relative overflow-hidden text-dark"
+                style="background: linear-gradient(135deg, #f3f9ff, #e0f0ff); border-left: 6px solid #d348ce;">
+                <div class="position-absolute top-0 start-0 w-100 h-100"
+                    style="background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(3px); z-index: 0;"></div>
+                <div class="position-relative z-1">
+                    <div class="mb-3">
+                        <i class="fas fa-landmark fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold mb-2">Interested in Johor's History?</h4>
+                    <p class="text-muted mb-4">Discover Johor's royal traditions, historical landmarks, and vibrant cultural tapestry.</p>
+                    <button type="button" class="btn btn-primary px-4 py-2 fw-semibold shadow-sm transition-transform"
+                        data-bs-toggle="modal" data-bs-target="#JohorHistoryModal">
+                        Learn About Johor's History
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Fade for Johor History -->
+    <div class="modal fade" id="JohorHistoryModal" tabindex="-1" aria-labelledby="JohorHistoryLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content shadow-lg border-0 rounded-4">
+
+                <!-- Modal Header -->
+                <div class="modal-header bg-gradient text-white rounded-top-4"
+                    style="background: linear-gradient(to right, #653477, #b51ecf);">
+                    <h5 class="modal-title fw-bold" id="JohorHistoryLabel">A Glimpse into Johor's History</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body p-4">
+                    <img src="JohorImage/JohorHistory.jpg" alt="Johor History"
+                        class="img-fluid rounded mb-4 shadow-sm" />
+
+                    <p class="lead text-muted mb-4">
+                        From royal beginnings to modern marvels, Johor is a land of tradition, progress, and cultural richness.
+                    </p>
+
+                    <!-- Timeline -->
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-3 text-primary"><i class="fas fa-history me-2"></i>Timeline Highlights:
+                        </h6>
+                        <ul class="list-unstyled ps-3">
+                            <li class="mb-3">
+                                <i class="fas fa-crown me-2 text-warning"></i>
+                                <strong>1528</strong> - Johor Sultanate established after the fall of Malacca.
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-industry me-2 text-secondary"></i>
+                                <strong>19th Century</strong> - Development under Temenggong Ibrahim and Sultan Abu Bakar, modernization and economic growth.
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-city me-2 text-info"></i>
+                                <strong>1994</strong> - Johor Bahru declared a city, becoming a key economic hub.
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Cultural Landmarks -->
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-3 text-danger"><i class="fas fa-map-marker-alt me-2"></i>Historic
+                            Landmarks:</h6>
+                        <div class="row row-cols-2 g-3">
+                            <div class="col"><i class="fas fa-check-circle text-success me-2"></i>Istana Besar (Grand Palace)</div>
+                            <div class="col"><i class="fas fa-check-circle text-success me-2"></i>Sultan Abu Bakar Mosque </div>
+                            <div class="col"><i class="fas fa-check-circle text-success me-2"></i>Kota Tinggi Waterfalls</div>
+                            <div class="col"><i class="fas fa-check-circle text-success me-2"></i>Arulmigu Sri Rajakaliamman Glass Temple</div>
+                        </div>
+                    </div>
+                    <!-- Festivals -->
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-3 text-success"><i class="fas fa-bahai me-2"></i>Iconic Cultural
+                            Festivals:</h6>
+                        <ul class="list-unstyled text-muted">
+                            <li><i class="fas fa-star text-warning me-2"></i>Johor Bahru Arts Festival</li>
+                            <li><i class="fas fa-star text-warning me-2"></i>Zapin Dance Festival</li>
+                            <li><i class="fas fa-star text-warning me-2"></i>Chinese New Year at Johor Bahru Old Temple</li>
+                            <li><i class="fas fa-star text-warning me-2"></i>Hari Raya Aidilfitri at Istana Bukit Serene</li>
+                        </ul>
+                    </div>
+
+                    <!-- Cuisine Section -->
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-3 text-warning"><i class="fas fa-utensils me-2"></i>Signature Cuisine:
+                        </h6>
+                        <p class="text-muted">Johor offers a unique blend of Malay, Chinese, and Indian flavors. Must-try dishes:</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item badge bg-secondary me-2 mb-2">Laksa Johor</li>
+                            <li class="list-inline-item badge bg-secondary me-2 mb-2">Otak-Otak</li>
+                            <li class="list-inline-item badge bg-secondary me-2 mb-2">Lei-Cha</li>
+                            <li class="list-inline-item badge bg-secondary me-2 mb-2">DimSum</li>
+                            <li class="list-inline-item badge bg-secondary me-2 mb-2">KwayTeowKia</li>
+                        </ul>
+                    </div>
+
+                    <!-- Heritage Quote -->
+                    <div class="mb-4">
+                        <blockquote class="blockquote px-4 py-3 bg-light border-start border-4 border-primary rounded">
+                            <p class="mb-0 fst-italic text-dark">"Johor stands where royal heritage blends seamlessly with dynamic modernity."</p>
+                            <footer class="blockquote-footer mt-2">Cultural Historian, 2020</footer>
+                        </blockquote>
+                    </div>
+
+                    <!-- Final Note -->
+                    <p class="text-muted">
+                        Johor's story is one of resilience, diversity, and innovation—woven into its grand palaces, bustling cities, and rich traditions.
+                    </p>
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="modal-footer bg-light rounded-bottom-4">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="https://tourismjohor.my/travel-guide/" target="_blank"
+                        class="btn btn-primary">
+                        Explore More at Tourism Johor
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  Callout Box Section -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="callout-box p-5 rounded-4 shadow-lg text-white position-relative overflow-hidden"
+                style="background: linear-gradient(135deg, #dd1b1b, #e05a5a);">
+
+                <!-- Animated Glow Background Effect -->
+                <div class="position-absolute top-0 start-0 w-100 h-100"
+                    style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(2px); z-index: 0;"></div>
+
+                <div class="d-md-flex align-items-center justify-content-between position-relative z-1">
+                    <div class="mb-4 mb-md-0">
+                        <h3 class="fw-bold mb-2"><i class="fas fa-map-marked-alt me-2"></i>Ready to Explore Johor?
+                        </h3>
+                        <p class="mb-0 fs-5">Discover a land where tradition meets modern thrill - plan your next
+                            journey in Malaysia's vibrant heartland.</p>
+                    </div>
+                    <a href="#" class="btn btn-outline-light px-4 py-2 fw-semibold rounded-pill shadow-sm transition"
+                        style="transition: all 0.3s ease-in-out;">
+                        Explore More
+                        <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Attractions Section -->
+    <section id="attractions" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Top Attractions in Johor</h2>
+            <div class="row">
+                <!-- First Attraction: Legoland Malaysia -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="JohorImage/Legoland.jpg" class="card-img-top" alt="Legoland Malaysia">
+                        <div class="card-body">
+                            <h3 class="card-title">Legoland Malaysia</h3>
+                            <p class="card-text">A family-favorite theme park with rides, water park, and a Lego-themed hotel.</p>
+                            <p><strong>Phone:</strong> 07-597 8888</p>
+                            <p><strong>Hours:</strong> 10:00 AM to 6:00 PM</p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps?sca_esv=f3bcd2ee2bfd0ccb&rlz=1C1ONGR_enMY1146MY1146&sxsrf=AHTn8zpjowctnbqoYxIYYdo3vNVaDaVOPg:1744473534458&gs_lp=Egxnd3Mtd2l6LXNlcnAiCWxlZ29sYW5kICoCCAIyChAjGIAEGCcYigUyChAjGIAEGCcYigUyChAjGIAEGCcYigUyChAAGIAEGEMYigUyGRAuGIAEGLEDGEMYxwEYmAUYmQUYigUYrwEyChAAGIAEGEMYigUyExAuGIAEGLEDGBQYxwEYhwIYrwEyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigVImw1QlQRYlQRwAXgBkAEAmAFxoAFxqgEDMC4xuAEByAEA-AEBmAICoAJ-wgIKEAAYsAMY1gQYR5gDAIgGAZAGCJIHAzEuMaAH4xCyBwMwLjG4B3g&um=1&ie=UTF-8&fb=1&gl=my&sa=X&geocode=KTPtdjyMC9oxMUs1RBnSCFuB&daddr=7,+Persiaran+Medini+Utara+3,+79100+Iskandar+Puteri,+Johor+Darul+Ta%27zim"
+                                    target="_blank">7, Persiaran Medini Utara 3, 79100 Iskandar Puteri, Johor Darul Ta'zim</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second Attraction: Desaru Coast -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="JohorImage/DesaruCoast.jpeg" class="card-img-top" alt="Desaru Coast">
+                        <div class="card-body">
+                            <h3 class="card-title">Desaru Coast</h3>
+                            <p class="card-text">A beautiful beach destination with luxury resorts, an adventure waterpark, and scenic coastline.</p>
+                            <p><strong>Phone:</strong> 016-913 0813</p>
+                            <p><strong>Hours:</strong> Open 24 hours daily</p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps?sca_esv=f3bcd2ee2bfd0ccb&rlz=1C1ONGR_enMY1146MY1146&sxsrf=AHTn8zoIhLWGxRfWXBe_WWgFABfNTMXTjg:1744473538723&gs_lp=Egxnd3Mtd2l6LXNlcnAaAhgDIgZkZXNhcnUqAggDMg0QABiABBixAxgUGIcCMg0QLhiABBixAxhDGIoFMhMQLhiABBixAxhDGMcBGIoFGK8BMhMQLhiABBixAxhDGMcBGIoFGK8BMiIQLhiABBhDGKYDGMcBGJgFGKgDGJkFGIoFGIsDGJ4FGK8BMhAQABiABBixAxhDGIoFGIsDMg0QABiABBhDGIoFGIsDMggQLhiABBixAzIFEAAYgAQyDhAuGIAEGLEDGMcBGK8BMiIQLhiABBixAxhDGMcBGIoFGK8BGJcFGNwEGN4EGOAE2AEBSKMgUABYtRRwAngAkAEAmAFqoAGqBKoBAzQuMrgBAcgBAPgBAZgCCaAClRDCAgoQIxiABBgnGIoFwgIKEC4YgAQYQxiKBcICEBAuGIAEGEMYxwEYigUYrwHCAgoQABiABBhDGIoFwgIOEC4YgAQYsQMY0QMYxwHCAg4QABiABBixAxiDARiKBcICCxAAGIAEGLEDGIoFwgIZEC4YgAQYQximAxjHARioAxiKBRiLAxivAcICHxAuGIAEGLEDGNEDGNIDGEMYgwEYxwEYqAMYigUYiwPCAg0QABiABBixAxhDGIoFwgIcEC4YgAQYsQMYQximAxjHARioAxiKBRiLAxivAcICGRAuGIAEGEMYxwEYmAUYmQUYigUYngUYrwHCAhwQLhiABBixAxhDGIoFGJcFGNwEGN4EGOAE2AEBmAMAugYGCAEQARgUkgcHNi4yLjctMaAH8nyyBwc0LjIuNy0xuAeLEA&um=1&ie=UTF-8&fb=1&gl=my&sa=X&geocode=KUtCWzVaTdoxMSn1jwgIyAjX&daddr=Jalan+Desaru+Coast,+Desaru,+81930+Bandar+Penawar,+Johor+Darul+Ta%27zim"
+                                    target="_blank">Jalan Desaru Coast, Desaru, 81930 Bandar Penawar, Johor Darul Ta'zim</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Third Attraction: Tanjung Piai National Park -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="JohorImage/TanjungPiai.jpg" class="card-img-top" alt="Tanjung Piai National Park">
+                        <div class="card-body">
+                            <h3 class="card-title">Tanjung Piai National Park</h3>
+                            <p class="card-text">The southernmost tip of mainland Asia, rich with mangroves and birdlife.</p>
+                            <p><strong>Phone:</strong> 013-744 0956</p>
+                            <p><strong>Hours:</strong> 9:00 AM to 4:30 PM</p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps?sca_esv=f3bcd2ee2bfd0ccb&rlz=1C1ONGR_enMY1146MY1146&sxsrf=AHTn8zpoqMsJlSvUsJZF-STpNYpLEAilhQ:1744473746824&gs_lp=Egxnd3Mtd2l6LXNlcnAaAhgCIgx0YW5qdW5nIHBpYWkqAggBMg4QLhiABBiRAhixAxiKBTIREC4YgAQYkQIYxwEYigUYrwEyCxAuGIAEGJECGIoFMhEQLhiABBjHARiYBRiaBRivATIFEAAYgAQyCxAuGIAEGMcBGK8BMgoQABiABBgUGIcCMgUQABiABDIFEAAYgAQyBRAAGIAEMh0QLhiABBiRAhixAxiKBRiXBRjcBBjeBBjgBNgBAUiUIlAAWLkUcAB4AJABAJgBuAGgAc4JqgEDNy41uAEByAEA-AEBmAIMoAKVCsICChAjGIAEGCcYigXCAhYQLhiABBhDGMcBGJgFGIoFGJoFGK8BwgIKEAAYgAQYQxiKBcICChAuGIAEGEMYigXCAhkQLhiABBhDGMcBGJgFGJkFGIoFGJ4FGK8BwgIWEC4YgAQYQxjHARiYBRiZBRiKBRivAcICBBAjGCfCAhAQLhiABBhDGMcBGIoFGK8BwgIZEC4YgAQYsQMYQxjHARiYBRiKBRiaBRivAcICDRAuGIAEGLEDGEMYigXCAgUQLhiABMICGRAuGIAEGEMYigUYlwUY3AQY3gQY4ATYAQHCAg0QABiABBhDGIoFGIsDwgIWEC4YgAQYsQMYQxioAxiKBRiLAxidA8ICHBAuGIAEGLEDGEMYgwEYxwEYmAUYigUYmgUYrwHCAggQLhiABBixA8ICCxAAGIAEGJECGIoFwgIOEC4YgAQYxwEYmAUYrwHCAhEQLhiABBiiBRioAxiLAxidA8ICFBAuGIAEGJECGKgDGIoFGIsDGJ0DwgIUEC4YgAQYlwUY3AQY3gQY4ATYAQGYAwC6BgYIARABGBSSBwM0LjigB-6FArIHAzQuOLgHlQo&um=1&ie=UTF-8&fb=1&gl=my&sa=X&geocode=KT8GMuKZqdAxMWCjLB9Y-ame&daddr=Taman+Negara+Johor+Tanjung+Piai+Mukim,+82030+Kukup,+Johor+Darul+Ta%27zim"
+                                    target="_blank">Taman Negara Johor Tanjung Piai Mukim, 82030 Kukup, Johor Darul Ta'zim</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <br>
+                </div>
+                <!-- Additional 6 Attractions -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="JohorImage/JPO.jpg" class="card-img-top" alt="Johor Premium Outlets">
+                        <div class="card-body">
+                            <h3 class="card-title">Johor Premium Outlets</h3>
+                            <p class="card-text">A popular shopping spot for branded goods at discounted prices.</p>
+                            <p><strong>Phone:</strong> 07-661 8888</p>
+                            <p><strong>Hours:</strong> 10:00 AM to 10:00 PM</p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps?sca_esv=f3bcd2ee2bfd0ccb&rlz=1C1ONGR_enMY1146MY1146&sxsrf=AHTn8zr5rxFoyFS2twknhFAXfoGmP72JNg:1744473840553&uact=5&gs_lp=Egxnd3Mtd2l6LXNlcnAaAhgBIgNqcG8yChAAGIAEGEMYigUyEBAAGIAEGLEDGEMYgwEYigUyExAuGIAEGBQYhwIYxwEYmAUYrwEyERAuGIAEGJECGMcBGIoFGK8BMgsQLhiABBjHARivATIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIFEAAYgAQyChAAGIAEGEMYigUyCBAAGIAEGIsDSNAFUABY1ANwAHgAkAEAmAGLAaAByQKqAQMyLjG4AQPIAQD4AQGYAgOgAtcCwgIKECMYgAQYJxiKBcICBBAjGCfCAhAQLhiABBhDGMcBGIoFGK8BwgIFEC4YgATCAg4QLhiABBixAxjRAxjHAcICDhAAGIAEGLEDGIMBGIoFwgIIEC4YgAQYsQPCAggQABiABBixA8ICDRAAGIAEGLEDGEMYigXCAhYQLhiABBixAxjRAxhDGNQCGMcBGIoFmAMAkgcDMS4yoAfkLLIHAzEuMrgH1wI&um=1&ie=UTF-8&fb=1&gl=my&sa=X&geocode=KYvXiy46d9oxMQiMySobEBe5&daddr=Jalan+Premium+Outlets,+Bandar+Indahpura,+81000+Kulai,+Johor+Darul+Ta%27zim"
+                                    target="_blank">Jalan Premium Outlets, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="JohorImage/KotaTinggi.jpg" class="card-img-top" alt="Kota Tinggi Waterfalls">
+                        <div class="card-body">
+                            <h3 class="card-title">Kota Tinggi Waterfalls</h3>
+                            <p class="card-text">A refreshing waterfall destination surrounded by forest and picnic spots.</p>
+                            <p><strong>Phone:</strong> 07-599 8888</p>
+                            <p><strong>Hours:</strong> 4:00 AM to 6:00 PM</p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/dir//Sungai+Pelepah,+Johor/@1.7930865,103.8150057,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x31da6053b2290d9b:0x59f0673c8020c4b4!2m2!1d103.8562055!2d1.793087?entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
+                                    target="_blank">Sungai Pelepah, Gunung Panti Recreational Forest, 81900 Kota Tinggi, Johor</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="JohorImage/UKFarm.jpg" class="card-img-top" alt="UK Farm Kluang">
+                        <div class="card-body">
+                            <h3 class="card-title">UK Farm Kluang</h3>
+                            <p class="card-text">Malaysia's largest goat and sheep farm, with educational tours and farm experiences.</p>
+                            <p><strong>Phone:</strong> 07-759 7555</p>
+                            <p><strong>Hours:</strong> 9:00 AM to 6:00 PM</p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps?sca_esv=f3bcd2ee2bfd0ccb&rlz=1C1ONGR_enMY1146MY1146&sxsrf=AHTn8zrS_s55NagVSgj3tTL-3pc2Qt7GIw:1744474140700&gs_lp=Egxnd3Mtd2l6LXNlcnAaAhgCIgR1ayBmKgIIATIKECMYgAQYJxiKBTIUEC4YgAQYkQIYxwEYmAUYigUYrwEyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI3ihQAFiJIXAFeACQAQCYAZUBoAHQBqoBAzUuNLgBAcgBAPgBAZgCDqACiwfCAgQQIxgnwgIREC4YgAQYkQIYxwEYigUYrwHCAggQLhiABBixA8ICCBAAGIAEGLEDwgIOEC4YgAQYsQMY0QMYxwHCAgsQABiABBiRAhiKBcICChAuGIAEGEMYigXCAggQABiABBiLA8ICDRAAGIAEGBQYhwIYiwPCAg4QABiABBixAxiDARiLA8ICERAuGIAEGKgDGJgDGJoDGIsDwgIKEAAYgAQYFBiHAsICCxAuGIAEGMcBGK8BwgIREC4YgAQYxwEYmAUYmQUYrwHCAgcQABiABBgKwgIKEAAYgAQYsQMYCsICDRAuGIAEGMcBGAoYrwHCAg0QABiABBixAxiDARgKwgIREC4YgAQYoQMY0gMYqAMYiwPCAg0QABiABBixAxgUGIcCwgINEAAYgAQYsQMYQxiKBcICEBAAGIAEGLEDGEMYgwEYigXCAgsQABiABBixAxiLA8ICBRAuGIAEwgIQEC4YgAQYxwEYmAUYChivAZgDAJIHBDEwLjSgB4VosgcDNS40uAf2Bg&um=1&ie=UTF-8&fb=1&gl=my&sa=X&geocode=KW1o4fusadAxMRMnP954qGS6&daddr=Projek+Pertanian+Moden+Kluang,,+KM13+Jalan+Batu+Pahat,+Kluang,+8,+86000+Kluang,+Johor"
+                                    target="_blank">Projek Pertanian Moden Kluang,, KM13 Jalan Batu Pahat, Kluang, 8, 86000 Kluang, Johor</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <br>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="JohorImage/AustinHeightsWater.jpg" class="card-img-top" alt="Austin Heights Water & Adventure Park">
+                        <div class="card-body">
+                            <h3 class="card-title">Austin Heights Water & Adventure Park</h3>
+                            <p class="card-text">Offers a water park with slides, a trampoline park for jumping fun, and exciting go-kart rides.</p>
+                            <p><strong>Phone:</strong> 019-716 3183</p>
+                            <p><strong>Hours:</strong> 10:00 AM to 6:00 PM</p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps?sca_esv=f3bcd2ee2bfd0ccb&rlz=1C1ONGR_enMY1146MY1146&sxsrf=AHTn8zq7bPGUX06BP84OhJOdXmq0wCFq6w:1744474328498&gs_lp=Egxnd3Mtd2l6LXNlcnAiA2F1cyoCCAAyERAuGIAEGJECGMcBGIoFGK8BMg0QLhiABBixAxhDGIoFMgoQLhiABBhDGIoFMgoQABiABBhDGIoFMggQLhiABBixAzINEAAYgAQYsQMYFBiHAjINEAAYgAQYsQMYFBiHAjIREC4YgAQYsQMYxwEYmAUYrwEyChAAGIAEGEMYigUyChAAGIAEGEMYigUyIBAuGIAEGJECGMcBGIoFGK8BGJcFGNwEGN4EGOAE2AEBSNsPUABY_gNwAHgAkAEAmAF-oAGtAqoBAzIuMbgBAcgBAPgBAZgCA6ACvgLCAgoQIxiABBgnGIoFwgIEECMYJ8ICEBAuGIAEGMcBGCcYigUYrwHCAhMQLhiABBixAxjRAxhDGMcBGIoFwgITEC4YgAQYQxjHARiYBRiKBRivAcICEBAuGIAEGEMYxwEYigUYrwHCAgsQLhiABBixAxiDAcICCBAAGIAEGLEDmAMAugYGCAEQARgUkgcDMS4yoAeCN7IHAzEuMrgHvgI&um=1&ie=UTF-8&fb=1&gl=my&sa=X&geocode=KWNyVf-HbtoxMf5rByHspR0D&daddr=71,+Jalan+Austin+Heights+8/1,+Taman+Mount+Austin,+81100+Johor+Bahru,+Johor+Darul+Ta%27zim"
+                                    target="_blank">71, Jalan Austin Heights 8/1, Taman Mount Austin, 81100 Johor Bahru, Johor Darul Ta'zim</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="JohorImage/BatuPahat.jpg" class="card-img-top" alt="Batu Pahat">
+                        <div class="card-body">
+                            <h3 class="card-title">Batu Pahat</h3>
+                            <p class="card-text">Batu Pahat is a vibrant town in Johor, known for great food, temples, and coastal charm.</p>
+                            <p><strong>Phone:</strong> 07-457 8888</p>
+                            <p><strong>Hours:</strong> Open 24 hours daily</p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/dir//batu+pahat/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x31d056d7332d5253:0xc79579f5b9d8c47?sa=X&ved=1t:155782&ictx=111"
+                                    target="_blank">Batu Pahat, Johor</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="JohorImage/Muar.jpg" class="card-img-top" alt="Muar">
+                        <div class="card-body">
+                            <h3 class="card-title">Muar</h3>
+                            <p class="card-text">Muar is a historic town known for its cultural heritage, local food, and scenic riverside views.</p>
+                            <p><strong>Phone:</strong> 06-957 8888</p>
+                            <p><strong>Hours:</strong> Open 24 hours daily</p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/dir/4.3286528,101.1318784/muar/@3.1931929,100.4266164,8z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x31d1b8efc454c54d:0xd9dff43901f2e6dc!2m2!1d102.5848717!2d2.0630519?entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
+                                    target="_blank">Muar, Johor</a></p>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <!-- A Food Lover’s Guide to Johor Section -->
+    <section id="food" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">A Food Lover's Guide to Johor</h2>
+            <div class="container text-center text-primary">
+                <p><strong>Tap to explore the flavors of your choice!</strong></p>  
+            </div><br>        
+            <div class="row">
+                <!-- Food Item 1: Kway Teow Kia -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="JohorImage/KwayTeowKia.jpg" class="card-img-top" alt="Kway Teow Kia">
+                                <div class="card-body">
+                                    <h3 class="card-title">Kway Teow Kia</h3>
+                                    <p class="card-text">A famous Johor Bahru dish known for its flat rice noodles and braised side dishes with the right level of sweet savoury herbal and Chinese spice flavours.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i> <strong>Restaurant:</strong> San Lou Kway Teow Kia</p>
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Jalan Biru, Kampung Stulang Darat, 80300 Johor Bahru, Johor Darul Ta'zim</p>
+                                <p><i class="fas fa-clock"></i> <strong>Opening Hours:</strong> 1:00 PM - 9:00 PM (Closed on Monday)</p>
+                                <p><i class="fas fa-info-circle"></i> <strong>Details:</strong> Has outdoor seating · Doesn't accept reservations</p>
+                                <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> 016-741 9793</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps/dir//Jalan+Biru,+Kampung+Stulang+Darat,+80300+Johor+Bahru,+Johor+Darul+Ta'zim/@1.4719185,103.695018,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x31da12d62b63dd85:0x82cdb8edd978a2ce!2m2!1d103.7773783!2d1.4719722?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                      </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Food Item 2: Muar Otak-Otak -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="JohorImage/OtakOtak.jpg" class="card-img-top" alt="Muar Otak-Otak">
+                                <div class="card-body">
+                                    <h3 class="card-title">Muar Otak-Otak</h3>
+                                    <p class="card-text">This fish cake is basically made by mixing fish paste with mixture of spices, shallot, garlic and coconut milk.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to buy</h3>
+                                <p><i class="fas fa-store"></i> <strong>Store:</strong> Xiao Mei Famous Muar Otak-Otak</p>
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 24, Jalan Hashim, 84000 Muar, Johor Darul Ta'zim</p>
+                                <p><i class="fas fa-clock"></i> <strong>Opening Hours:</strong> 8:30 AM - 5:30 PM (Monday to Sunday)</p>
+                                <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> 06-952 3430</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps/dir//24,+Jalan+Hashim,+84000+Muar,+Johor+Darul+Ta'zim/@2.0495576,102.4944394,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x31d1b900c4315d65:0xfe599cfdf1c0a06f!2m2!1d102.5768414!2d2.0495597?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                      </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Food Item 3: Lei-Cha -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="JohorImage/LeiCha.jpg" class="card-img-top" alt="Lei-Cha">
+                                <div class="card-body">
+                                    <h3 class="card-title">Lei-Cha</h3>
+                                    <p class="card-text">It is a Hakka dish, a tea-based beverage or gruel, often served with rice.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i> <strong>Restaurant:</strong> Volcano Coffee House Lei-Cha</p>
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 8091, Kampung Baru, Kelapa Sawit, 81030 Kulai, Johor Darul Ta'zim</p>
+                                <p><i class="fas fa-clock"></i> <strong>Opening Hours:</strong> 5:00 AM - 1:00 PM (Closed at Sunday)</p>
+                                <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> 017-211 1103</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps/dir//No8091,+kampung+baru,+kelapa+sawit,+81030+Kulai,+Johor+Darul+Ta'zim/@1.6729989,103.4469674,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x31d08264898b5935:0x2f058f2d5f79a9e7!2m2!1d103.5293694!2d1.6730006?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Food Item 4: Bak Kut Teh -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="JohorImage/BakKutTeh.jpg" class="card-img-top" alt="Bak Kut Teh">
+                                <div class="card-body">
+                                    <h3 class="card-title">Bak Kut Teh</h3>
+                                    <p class="card-text">The dish consists of pork ribs stewed with a mixture of fragrant herbs and spices such as garlic, cloves, cinnamon, star anise, fennel seeds and coriander.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i> <strong>Restaurant:</strong> Kiang Kee Bak Kut Teh</p>
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Batu 8, Jalan Mawai, Kampung Haji Mohd Jambi, 81900 Kota Tinggi, Johor Darul Ta'zim</p>
+                                <p><i class="fas fa-clock"></i> <strong>Opening Hours:</strong> 7:30 AM - 2:00 PM (Closed at Monday and Tuesday)</p>
+                                <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> 019-747 9416</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps/dir//Batu+8,+Jalan+Mawai,+Kampung+Haji+Mohd+Jambi,+81900+Kota+Tinggi,+Johor+Darul+Ta'zim/@1.8275051,103.8762541,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x31da6091b0bd10ed:0xf2cebb1541b853e8!2m2!1d103.9586561!2d1.827507?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Food Item 5: Dim Sum -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="JohorImage/DimSum.jpg" class="card-img-top" alt="Dim Sum">
+                                <div class="card-body">
+                                    <h3 class="card-title">Dim Sum</h3>
+                                    <p class="card-text">Dim Sum is a variety of bite-sized Chinese dishes, like dumplings, buns, and rolls, typically served in small portions with fillings such as shrimp, pork, or vegetables.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i> <strong>Restaurant:</strong> Yoon Lai Dim Sum</p>
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 646, Jalan Gangsa 6, Taman Timur, 81000 Kulai, Johor Darul Ta'zim</p>
+                                <p><i class="fas fa-clock"></i> <strong>Opening Hours:</strong> 6:00 AM - 4:00 PM (Monday to Sunday)</p>
+                                <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> 016-765 1868</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?sca_esv=d4ac063c10135007&rlz=1C1ONGR_enMY1146MY1146&biw=1536&bih=776&sxsrf=AHTn8zoGjyPwuS_nDT-LlwzbOczXQJ9qCw:1743932634962&uact=5&gs_lp=Egxnd3Mtd2l6LXNlcnAiEFlvb24gTGFpIERpbSBTdW0yBBAjGCcyCxAuGIAEGMcBGK8BMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjmAlAAWABwAHgAkAEAmAFioAFiqgEBMbgBA8gBAPgBAvgBAZgCAaACapgDAJIHAzAuMaAHtwuyBwMwLjG4B2o&um=1&ie=UTF-8&fb=1&gl=my&sa=X&geocode=KUlgoxlNeNoxMdw5aHAyhIAN&daddr=646,+Jalan+Gangsa+6,+Taman+Timur,+81000+Kulai,+Johor+Darul+Ta%27zim" target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Food Item 6: Laksa Johor -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="JohorImage/LaksaJohor.jpeg" class="card-img-top" alt="Laksa Johor">
+                                <div class="card-body">
+                                    <h3 class="card-title">Laksa Johor</h3>
+                                    <p class="card-text">A unique version of laksa with spaghetti-like noodles, served with a rich, spicy fish-based gravy.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i> <strong>Restaurant:</strong> Laksa Ah Keong Tampoi</p>
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 21, Jalan Pelanduk, Taman Abad, 80250 Johor Bahru, Johor Darul Ta'zim</p>
+                                <p><i class="fas fa-clock"></i> <strong>Opening Hours:</strong> 11:00 AM - 11:00 PM (Monday to Sunday)</p>
+                                <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> 016-720 4261</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps/dir//21,+Jalan+Pelanduk,+Taman+Abad,+80250+Johor+Bahru,+Johor+Darul+Ta'zim/@1.4870933,103.678618,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x31da6d736653b0b7:0xf9084662e53933f6!2m2!1d103.7610279!2d1.4871088?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Food Item 7: Lala Pot -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="JohorImage/LalaPot.jpg" class="card-img-top" alt="Lala Pot">
+                                <div class="card-body">
+                                    <h3 class="card-title">Lala Pot</h3>
+                                    <p class="card-text">A popular Malaysian dish, a type of hotpot or stew featuring clams (lala) as a main ingredient, often served with various other ingredients and a flavorful broth.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i> <strong>Restaurant:</strong> Dai Fatt Lala Pot (Kulai Branch)</p>
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> No 128, Pusat Komersial Indah, Jln Kiambang 14, Indahpura, 81000 Kulai, Johor</p>
+                                <p><i class="fas fa-clock"></i> <strong>Opening Hours:</strong> 12:00 PM - 11:00 PM (Monday to Sunday)</p>
+                                <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> 010-548 4688</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?sca_esv=d4ac063c10135007&rlz=1C1ONGR_enMY1146MY1146&biw=1536&bih=776&sxsrf=AHTn8zoGruRWxQm6tXXhw5bc1RXfBciD8w:1743933181238&gs_lp=Egxnd3Mtd2l6LXNlcnAaAhgCIg1kYWkgZmF0dCBsYWxhKgIIAzIREC4YgAQYkQIYxwEYigUYrwEyCxAAGIAEGJECGIoFMgsQLhiABBjHARivATIFEAAYgAQyCxAAGIAEGJECGIoFMgsQLhiABBjHARivATIFEAAYgAQyDhAuGIAEGMcBGI4FGK8BMggQABiABBjLAUiiRVAAWJoicAJ4AJABApgBkgWgAfESqgELNS41LjEuMC4xLjG4AQHIAQD4AQGYAg-gAvA6wgIKECMYgAQYJxiKBcICChAAGIAEGEMYigXCAhAQLhiABBhDGMcBGIoFGK8BwgIREC4YgAQYsQMY0QMYgwEYxwHCAggQABiABBiLA8ICFxAuGIAEGLEDGNEDGNIDGMcBGKgDGIsDwgILEAAYgAQYsQMYgwHCAg0QABiABBhDGIoFGIsDwgIWEC4YgAQYQxioAxiKBRiLAxieAxifA8ICChAuGIAEGEMYigXCAhAQABiABBixAxhDGIMBGIoFwgINEAAYgAQYsQMYFBiHAsICCxAuGIAEGLEDGIMBwgIQEC4YgAQYsQMYQxiDARiKBcICBRAuGIAEwgIgEC4YgAQYkQIYxwEYigUYrwEYlwUY3AQY3gQY4ATYAQHCAhoQLhiABBjHARivARiXBRjcBBjeBBjgBNgBAZgDALoGBggBEAEYFJIHDzYuNi41LTEuMC4xLjAuMaAH2uoBsgcPNC42LjUtMS4wLjEuMC4xuAfkOg&um=1&ie=UTF-8&fb=1&gl=my&sa=X&geocode=KRMQVyIAedoxMWmE99_F-nrn&daddr=No+128,+Pusat+Komersial+Indah,+Jln+Kiambang+14,+Indahpura,+81000+Kulai,+Johor" target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Food Item 8: Banana Cakes -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="JohorImage/BananaCake.webp" class="card-img-top" alt="Banana Cakes">
+                                <div class="card-body">
+                                    <h3 class="card-title">Banana Cakes</h3>
+                                    <p class="card-text">Banana cakes are soft, moist desserts made with ripe bananas, offering a sweet and flavorful treat.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Buy</h3>
+                                <p><i class="fas fa-store"></i> <strong>Store:</strong> Hiap Joo Bakery & Biscuit Factory</p>
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 13, Jalan Tan Hiok Nee, Bandar Johor Bahru, 80000 Johor Bahru, Johor Darul Ta'zim</p>
+                                <p><i class="fas fa-clock"></i> <strong>Opening Hours:</strong> 7:30 AM - 5:00 PM (Monday to Sunday)</p>
+                                <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> 07-223 1703</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps/dir//13,+Jalan+Tan+Hiok+Nee,+Bandar+Johor+Bahru,+80000+Johor+Bahru,+Johor+Darul+Ta'zim/@1.4566881,103.6819708,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x31da12e7c5364195:0xb87c877e96819f88!2m2!1d103.7643708!2d1.4566943?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Food Item 9: Ulu Tiram Loh Mee -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="JohorImage/LohMee.jpg" class="card-img-top" alt="Ulu Tiram Loh Mee">
+                                <div class="card-body">
+                                    <h3 class="card-title">Ulu Tiram Loh Mee</h3>
+                                    <p class="card-text">a popular Malaysian dish featuring thick, savory noodles in a rich, starchy broth, typically served with pork, shrimp, and a variety of aromatic toppings.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i> <strong>Restaurant:</strong> Hoa Kee Kopitiam</p>
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Jalan Gaya 25, Taman Gaya, 81800 Ulu Tiram, Johor Darul Ta'zim</p>
+                                <p><i class="fas fa-clock"></i> <strong>Opening Hours:</strong> 6:00 AM - 10:00 PM (Monday to Sunday)</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?s=web&rlz=1C1ONGR_enMY1146MY1146&sca_esv=d4ac063c10135007&lqi=ChF1bHUgdGlyYW0gbG9oIG1lZUjUv8r5lKuAgAhaIxAAEAEQAhADGAAYASIRdWx1IHRpcmFtIGxvaCBtZWUyAm1zkgEKcmVzdGF1cmFudKoBUgoJL20vMGcybjljEAEqCyIHbG9oIG1lZSgoMh8QASIbeOnpUFulhtQpF9KMQfQ-dDGy6fWEazVzj4nWMhUQAiIRdWx1IHRpcmFtIGxvaCBtZWW6AQkKB2xvaCBtZWU&phdesc=Z8j_gxifzhk&vet=12ahUKEwjcueDJlMOMAxXgRWwGHTqxMb8Q1YkKegQIJxAB..i&cs=1&um=1&ie=UTF-8&fb=1&gl=my&sa=X&geocode=KfFvJ06-btoxMRA53Wc7LsNv&daddr=Jalan+Gaya+25,+Taman+Gaya,+81800+Ulu+Tiram,+Johor+Darul+Ta%27zim" target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>             
+            </div>
+    </section>
+
+    <!-- ======= New Featured Foods Section ======= -->
+    <section id="featured-foods" class="py-5" style="background: #f9f5f2;">
+        <div class="container">
+          <h2 class="section-title text-center mb-5">Steaming Hot Spicy Dishes</h2>
+          <p class="text-center mb-4">Welcome to the Johor Challenge — dare to take on our steaming hot and spicy specialties!</p>
+          
+          <div class="row justify-content-center">
+            <!-- Chili Pan-Mee Card -->
+            <div class="col-md-5 mb-4">
+              <div class="steamy-food-card">
+                <img src="JohorImage/ChiliPanMee.webp" class="food-img" alt="Chili Pan-Mee">
+                <div class="food-details">
+                  <h3>Chili Pan-Mee</h3>
+                  <p>This dish packs a punch with a rich, savory broth, topped with a fiery homemade chili paste that'll set your taste buds on fire. The spicy kick is balanced with crispy anchovies and a poached egg, making it a fiery yet satisfying meal — not for the spice-shy!</p>
+                  <div class="spicy-indicator">
+                    <i class="fas fa-pepper-hot"></i> Spicy Level: Hellfire <i class="fas fa-fire"></i> <i class="fas fa-fire"></i> <i class="fas fa-fire"></i>
+                  </div>
+                </div>
+                <div class="steam s1"></div>
+                <div class="steam s2"></div>
+                <div class="steam s3"></div>
+              </div>
+            </div>
+            
+            <!-- Asam Pedas Ikan Pari Card -->
+            <div class="col-md-5 mb-4">
+              <div class="steamy-food-card">
+                <img src="JohorImage/asampedas.jpg" class="food-img" alt="Asam Pedas Ikan Pari">
+                <div class="food-details">
+                  <h3>Asam Pedas Ikan Pari</h3>
+                  <p>This dish brings the heat with a tangy, spicy tamarind gravy, bursting with fresh chilies and aromatic herbs that will set your taste buds on fire. The rich, sour flavors of the tamarind combined with the fiery chili make it a bold and intense dish — definitely not for the faint-hearted!</p>
+                  <div class="spicy-indicator">
+                    <i class="fas fa-pepper-hot"></i> Spicy Level: Extreme <i class="fas fa-fire"></i> <i class="fas fa-fire"></i> <i class="fas fa-fire"></i> <i class="fas fa-fire"></i>
+                  </div>
+                </div>
+                <div class="steam s1"></div>
+                <div class="steam s2"></div>
+                <div class="steam s3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    <!-- A Hotel Lover’s Guide to Johor Section -->
+    <section id="hotels" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">A Hotel Lover's Guide to Johor</h2>
+            <div class="container text-center text-primary">
+                <p><strong>Tap to explore the perfect stay for your trip!</strong></p>
+            </div><br>
+
+            <!-- First row -->
+            <div class="row">
+                <!-- Hotel 1 -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="JohorImage/LegolandHotel.webp" class="card-img-top"
+                                    alt="Legoland Hotel">
+                                <div class="card-body">
+                                    <h3 class="card-title">Legoland Hotel</h3>
+                                    <p class="card-text">A playful, themed stay right next to Legoland Malaysia in Johor. Kids love the Lego-filled rooms, pool, and early park access.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> No 7, Jln Legoland, Bandar, 79250 Johor Bahru, Johor</p>
+                                <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> +60 7-597 8888</p>
+                                <p><i class="fas fa-globe"></i> <strong>Website:</strong> <a
+                                        href="https://www.legoland.com.my/hotel/" target="_blank">legoland.com</a></p>
+                                <p><i class="fas fa-clock"></i> <strong>Check-in:</strong> 4:00 PM |
+                                    <strong>Check-out:</strong> 11:00 AM
+                                </p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?sca_esv=551b6e6a4982d666&rlz=1C1ONGR_enMY1146MY1146&biw=1536&bih=776&sxsrf=AHTn8zr8QHkMKye3f25BuGWkq36Ur1e8Pw:1744384921659&gs_lp=Egxnd3Mtd2l6LXNlcnAiFmxlZ29sYW5kIGhvdGVsIGNoZWNraW4qAggCMgsQABiABBiRAhiKBTILEAAYgAQYkQIYigUyCxAAGIAEGJECGIoFMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCBAAGIAEGKIEMggQABiiBBiJBTIFEAAY7wUyCBAAGIAEGKIEMggQABiABBiiBEibHFCBBliMD3ABeACQAQCYAWSgAdUFqgEDOC4xuAEByAEA-AEBmAIJoAKVBcICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgIOEAAYsAMY5AIY1gTYAQHCAh8QLhiABBiwAxhDGMcBGJgFGMgDGJkFGIoFGK8B2AEBwgIZEC4YgAQYsAMYQxjHARjIAxiKBRivAdgBAcICIhAuGIAEGLADGEMYxwEYmAUYyAMYmQUYigUYngUYrwHYAQHCAgoQABiABBhDGIoFwgIWEC4YgAQYFBjHARiHAhiYBRiZBRivAcICBRAAGIAEwgIZEC4YgAQYFBiHAhjHARiYBRiZBRieBRivAcICBhAAGBYYHsICChAAGIAEGBQYhwKYAwCIBgGQBhO6BgYIARABGAmSBwE5oAfKVrIHATi4B4wF&um=1&ie=UTF-8&fb=1&gl=my&sa=X&geocode=KfvLByXOC9oxMUbxaaLVtbgs&daddr=No+7,+Jln+Legoland,+Bandar,+79250+Johor+Bahru,+Johor"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 2 -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="JohorImage/PulaiSpring.jpg" class="card-img-top"
+                                    alt="Pulai Springs Resort, Johor Bahru">
+                                <div class="card-body">
+                                    <h3 class="card-title">Pulai Springs Resort, Johor Bahru</h3>
+                                    <p class="card-text">Whether you're dreaming of a relaxing getaway, a fun-filled family vacation, or a romantic retreat, we have tailored offers to suit every traveler.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 20, Jalan Pontian Lama, Pulai, 81110 Johor Bahru, Johor Darul Ta'zim</p>
+                                <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> +60 7-521 2121</p>
+                                <p><i class="fas fa-globe"></i> <strong>Website:</strong> <a
+                                        href="https://www.pulaisprings.com/" target="_blank">pulaisprings.com</a></p>
+                                <p><i class="fas fa-clock"></i> <strong>Check-in:</strong> 3:00 PM |
+                                    <strong>Check-out:</strong> 12:00 PM
+                                </p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?sca_esv=551b6e6a4982d666&rlz=1C1ONGR_enMY1146MY1146&biw=1536&bih=776&sxsrf=AHTn8zo4vRnQbz7pFTS5shFaLG2dHuYWrw:1744385419721&gs_lp=Egxnd3Mtd2l6LXNlcnAiJ1B1bGFpIFNwcmluZ3MgUmVzb3J0LCBKb2hvciBCYWhydSBjaGVjayoCCAAyBRAhGKABMgUQIRigATIFECEYoAEyBBAhGBVImxtQyApYuRFwAXgAkAEAmAFloAGUBKoBAzYuMbgBAcgBAPgBAZgCB6AC-gPCAgoQABiwAxjWBBhHwgIEECMYJ8ICFxAuGIAEGJECGMcBGJgFGJkFGIoFGK8BwgILEAAYgAQYkQIYigXCAggQABiABBjLAcICBhAAGBYYHsICBRAAGO8FwgIIEAAYgAQYogTCAggQABiiBBiJBcICBxAhGKABGAqYAwCIBgGQBgiSBwM2LjGgB6gqsgcDNS4xuAfzAw&um=1&ie=UTF-8&fb=1&gl=my&sa=X&geocode=KWNbjLmOdtoxMRym-68A3kyq&daddr=20km,+Jalan+Pontian+Lama,+Pulai,+81110+Johor+Bahru,+Johor+Darul+Ta%27zim"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second row -->
+            <div class="row">
+                <!-- Hotel 3 -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="JohorImage/V8Hotel.jpg" class="card-img-top" alt="V8 Hotel">
+                                <div class="card-body">
+                                    <h3 class="card-title">V8 Hotel</h3>
+                                    <p class="card-text">offers modern comfort and convenience with stylish rooms, strategic city access, and thoughtful amenities for business and leisure travelers.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 2, Jalan Jati 2, Taman Nusa Bestari Jaya, 81300 Skudai, Johor Darul Ta'zim</p>
+                                <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> +60 7-555 2888</p>
+                                <p><i class="fas fa-globe"></i> <strong>Website:</strong> <a
+                                        href="https://v8hotel.com.my/" target="_blank">V8Hotel.com</a></p>
+                                <p><i class="fas fa-clock"></i> <strong>Check-in:</strong> 3:00 PM |
+                                    <strong>Check-out:</strong> 12:00 PM
+                                </p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?sca_esv=551b6e6a4982d666&rlz=1C1ONGR_enMY1146MY1146&sxsrf=AHTn8zorUMKfVYMqHfRm-lClKnf-m2ZaxA:1744385677790&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpIgVFCTcbZI9VMGzNoV0iOQWvoN6wK1A8aX6zC3f7flaUjtpebNCU-SBjNDoUGnPjqjr6C5VY5q4MnMfcFO6fifEw1aq0yBYeIckmQ1hx_3EZodSkXhH6Tz3l_NDbhfKEKudTouDdpoV2H6G87T0Hc_oNcXLiit_mjEOt1Er1wygGXZDVjLiVflE9jIMxprbd8W8yMA&biw=1536&bih=776&dpr=1.25&um=1&ie=UTF-8&fb=1&gl=my&sa=X&geocode=Ke-qcFtqc9oxMeeMzRwgeh54&daddr=2,+Jalan+Jati+2,+Taman+Nusa+Bestari+Jaya,+81300+Skudai,+Johor+Darul+Ta%27zim"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 4 -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="JohorImage/HakoHotel.jpg" class="card-img-top"
+                                    alt="Hako Hotel Taman Mount Austin">
+                                <div class="card-body">
+                                    <h3 class="card-title">Hako Hotel Taman Mount Austin</h3>
+                                    <p class="card-text">A sleek, modern stay in Johor Bahru's buzzing food and entertainment district, offering cozy comfort steps from vibrant cafes and nightlife.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> No.17-02,17-03,17, 04, Jalan Austin Heights 8/3, Taman Mount Austin, 81100 Johor Bahru, Johor Darul Ta'zim</p>
+                                <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> +60 10-806 0600</p>
+                                <p><i class="fas fa-globe"></i> <strong>Website:</strong> <a
+                                        href="https://hakohotel.com/" target="_blank">hakohotel.com</a></p>
+                                <p><i class="fas fa-clock"></i> <strong>Check-in:</strong> 3:00 PM |
+                                    <strong>Check-out:</strong> 12:00 PM
+                                </p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?sca_esv=9b97cf5dfe314dde&rlz=1C1ONGR_enMY1146MY1146&sxsrf=AHTn8zpUHD8sJS6GMfabLH5f046edRVM6g:1744386108636&fbs=ABzOT_C5tGlORvdwLfbfO9BEMm59nuv5UOMRj-4CRwRttH1LqM3o__0bla5FEEN2rvkxvaod00CVB_U-czd6Oy3PHg1jPL4Lai9zD7SLW7b3fFiBNsX41S8RN7BpexIvRsLdIMNDNA4UtxcJAQjsVZpO8odenQ7qhDVyflnxY7jNbHGInwBUasyQ8-g0TDXAb2UgzIrPMQIN0zHL-vzZSbW5OzopoZ5OcQ&biw=1536&bih=776&dpr=1.25&um=1&ie=UTF-8&fb=1&gl=my&sa=X&geocode=KRkC8OFBb9oxMVzw_Xss50N2&daddr=No.17-02,17-03,17,+04,+Jalan+Austin+Heights+8/3,+Taman+Mount+Austin,+81100+Johor+Bahru,+Johor+Darul+Ta%27zim"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third row -->
+            <div class="row">
+                <!-- Hotel 5 -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="JohorImage/DoubleTree.jpg" class="card-img-top"
+                                    alt="DoubleTree by Hilton Johor Bahru">
+                                <div class="card-body">
+                                    <h3 class="card-title">DoubleTree by Hilton Johor Bahru</h3>
+                                    <p class="card-text">Experience upscale comfort in the heart of Johor Bahru, complete with warm chocolate chip cookie welcomes, a rooftop pool with city views, and seamless access to shopping and business hubs..</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 12, Jalan Ngee Heng, Bandar Johor Bahru, 80000 Johor Bahru, Johor Darul Ta'zim</p>
+                                <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> +60 7-268 6868</p>
+                                <p><i class="fas fa-globe"></i> <strong>Website:</strong> <a
+                                        href="https://www.hilton.com/en/hotels/jhbdtdi-doubletree-johor-bahru/" target="_blank">doubletree.com</a></p>
+                                <p><i class="fas fa-clock"></i> <strong>Check-in:</strong> 3:00 PM |
+                                    <strong>Check-out:</strong> 12:00 PM
+                                </p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?sca_esv=9b97cf5dfe314dde&rlz=1C1ONGR_enMY1146MY1146&sxsrf=AHTn8zpKR1OQrJ50G-8q4HdEUAEp51xjcQ:1744386282829&uact=5&gs_lp=Egxnd3Mtd2l6LXNlcnAiIERvdWJsZVRyZWUgYnkgSGlsdG9uIEpvaG9yIEJhaHJ1MhoQLhiABBiRAhjHARiYBRiZBRiKBRieBRivATIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIpEC4YgAQYkQIYxwEYmAUYmQUYigUYngUYrwEYlwUY3AQY3gQY4ATYAQFI8ARQAFgAcAB4AJABAJgBsQGgAbEBqgEDMC4xuAEDyAEA-AEC-AEBmAIBoAK5AZgDALoGBggBEAEYFJIHAzAuMaAHrwqyBwMwLjG4B7kB&um=1&ie=UTF-8&fb=1&gl=my&sa=X&geocode=KaNQR1LEEtoxMTuwPl3bKBbM&daddr=12,+Jalan+Ngee+Heng,+Bandar+Johor+Bahru,+80000+Johor+Bahru,+Johor+Darul+Ta%27zim" target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 6 -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="JohorImage/Muo.jpg" class="card-img-top" alt="Muo Boutique Hotel">
+                                <div class="card-body">
+                                    <h3 class="card-title">Muo Boutique Hotel</h3>
+                                    <p class="card-text">A charming heritage-inspired retreat in Muar, Johor, blending nostalgic elegance with modern comforts in the heart of the historic riverfront town.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 1 Jalan Petri, 84000 Muar, Johor</p>
+                                <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> +60 6-952 0000</p>
+                                <p><i class="fas fa-globe"></i> <strong>Website:</strong> <a
+                                        href="http://www.muoboutique.com/" target="_blank">muoboutique.com</a></p>
+                                <p><i class="fas fa-clock"></i> <strong>Check-in:</strong> 3:00 PM |
+                                    <strong>Check-out:</strong> 12:00 PM
+                                </p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?sca_esv=9b97cf5dfe314dde&rlz=1C1ONGR_enMY1146MY1146&sxsrf=AHTn8zo-H57tklLKGPXszNDSUWyrlcVYiA:1744386924549&gs_lp=Egxnd3Mtd2l6LXNlcnAaAhgDIgRtdW8gKgIIATIiEC4YgAQYQximAxjHARiYBRj4BRioAxiZBRiKBRiLAxivATIfEC4YgAQYQximAxjHARiYBRioAxiZBRiKBRiLAxivATIKEAAYgAQYQxiKBTIKEAAYgAQYFBiHAjIREC4YgAQYxwEYmAUYmQUYrwEyFhAuGIAEGEMYxwEYmAUYmQUYigUYrwEyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMjEQLhiABBhDGKYDGMcBGJgFGPgFGKgDGJkFGIoFGIsDGK8BGJcFGNwEGN4EGOAE2AEBSJwjUABYhQ9wAngAkAEAmAF7oAHpBKoBAzMuM7gBAcgBAPgBAZgCCKACkgXCAhAQLhiABBjHARgnGIoFGK8BwgIEECMYJ8ICChAjGIAEGCcYigXCAiIQLhiABBhDGKYDGMcBGJgFGKgDGJkFGIoFGIsDGJ4FGK8BwgIdEC4YgAQYxwEYigUYrwEYlwUY3AQY3gQY4ATYAQHCAgsQABiABBiRAhiKBcICFxAuGIAEGJECGMcBGJgFGJkFGIoFGK8BwgINEAAYgAQYsQMYQxiKBcICCxAuGIAEGJECGIoFwgIWEC4YgAQYFBiHAhjHARiYBRiZBRivAcICDRAuGIAEGEMY1AIYigXCAg0QABiABBhDGIoFGIsDwgIZEC4YgAQYQxjHARiYBRiZBRiKBRieBRivAcICJRAuGIAEGEMYxwEYmAUYmQUYigUYrwEYlwUY3AQY3gQY4ATYAQGYAwC6BgYIARABGBSSBwM1LjOgB_d-sgcDMy4zuAeIBQ&um=1&ie=UTF-8&fb=1&gl=my&sa=X&geocode=KWv33lIFudExMb2c0CPLaQ3y&daddr=1+Jalan+Petri,+84000+Muar,+Johor"target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script>
+        // Wait for the DOM to fully load
+        document.addEventListener('DOMContentLoaded', function () {
+            // Select all cards with class 'card1'
+            const cards = document.querySelectorAll('.card1');
+
+            // Add event listener for each card
+            cards.forEach(card => {
+                card.addEventListener('click', function () {
+                    // Toggle the 'flipped' class
+                    card.classList.toggle('flipped');
+                });
+            });
+        });
+    </script>
+
+    
+    <!-- Travel Tips in Johor -->
+    <section id="travel-tips" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="section-title text-center">Essential Travel Tips for Johor</h2>
+            <p class="text-center mb-5">Make the most of your Johor adventure with these helpful tips</p>
+            
+            <div class="row g-4">
+                <!-- Tip 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100">
+                        <div class="tip-icon bg-primary text-white">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Best Time to Visit</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-calendar-day text-success"></i></span>The off-peak season in Johor is typically between March to May and September to November.</li>
+                            <li><span class="fa-li"><i class="fas fa-sun text-warning"></i></span>The weather is dry and sunny during this period.</li>
+                            <li><span class="fa-li"><i class="fas fa-hiking text-primary"></i></span>It's ideal for outdoor activities and sightseeing.</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a href="https://tourismjohor.my/" target="_blank">Tourism Johor</a></small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tip 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100">
+                        <div class="tip-icon bg-success text-white">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Food Scene</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-utensils text-success"></i></span>Johor offers a diverse and vibrant culinary experience with unique dishes like Laksa Johor and Murtabak.</li>
+                            <li><span class="fa-li"><i class="fas fa-cookie-bite text-primary"></i></span>Local eateries serve a variety of flavors, including favorites like Nasi Lemak and Teh Tarik.</li>
+                            <li><span class="fa-li"><i class="fas fa-ice-cream text-info"></i></span>Whether you're craving savory meals or refreshing desserts like Cendol, Johor has something to satisfy every taste.</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a href="https://gojohor.my/top-johor-food/" target="_blank">GoJohor</a></small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tip 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100">
+                        <div class="tip-icon bg-warning text-white">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>Shopping Suggestion</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-shopping-bag text-primary"></i></span>Johor offers a variety of shopping experiences, from luxury outlets to local markets.</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Johor Premium Outlets is perfect for those looking for discounted branded goods, while Pasar Karat provides a unique flea market experience.</li>
+                            <li><span class="fa-li"><i class="fas fa-store text-info"></i></span>For a more modern shopping experience, head to Komtar JBCC, where you'll find international brands and entertainment options.</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a href="https://www.tripadvisor.com.my/Attractions-g298278-Activities-c26-t143-Johor_Bahru_Johor_Bahru_District_Johor.html" target="_blank">Tripadvisor</a></small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tip 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100">
+                        <div class="tip-icon bg-info text-white">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Top Attraction</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-umbrella-beach"></i></span>Johor boasts a range of top attractions, from the thrilling Legoland Malaysia to the tranquil beauty of Desaru Coast.</li>
+                            <li><span class="fa-li"><i class="fas fa-landmark"></i></span>Visitors can explore historical sites like the Sultan Abu Bakar State Mosque or enjoy the natural wonders at Gunung Ledang.</li>
+                            <li><span class="fa-li"><i class="fas fa-mountain"></i></span>Whether you're seeking adventure, culture, or relaxation, Johor offers something for everyone.</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a href="https://tourismjohor.my/" target="_blank">Tourism Johor</a></small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tip 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100">
+                        <div class="tip-icon bg-danger text-white">
+                            <i class="fas fa-theater-masks"></i>
+                        </div>
+                        <h3>Cultural Highlights</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-landmark"></i></i></span>Johor is rich in cultural heritage, with landmarks like the Sultan Abu Bakar State Mosque showcasing its architectural splendor.</li>
+                            <li><span class="fa-li"><i class="fas fa-church"></i></i></span>The Johor Old Chinese Temple is a significant symbol of the state's Chinese heritage, offering a glimpse into the past.</li>
+                            <li><span class="fa-li"><i class="fas fa-map"></i></i></span>Visitors can also explore the Johor Heritage Trail, a journey through historical sites that tell the story of the region's diverse culture.</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a href="https://www.klook.com/en-MY/experiences/list/johor-bahru-cultural-experiences/c191-cate122/" target="_blank">Klook</a></small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tip 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100">
+                        <div class="tip-icon bg-secondary text-white">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <h3>Important Notes</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-cloud-sun"></i></span>When visiting Johor, it's important to plan your trip around the weather, as the monsoon season can affect outdoor activities.</li>
+                            <li><span class="fa-li"><i class="fas fa-money-bill-wave"></i></span>Always carry local currency, as some smaller places may not accept credit cards.</li>
+                            <li><span class="fa-li"><i class="fas fa-handshake"></i></span>Be mindful of local customs and etiquette, especially when visiting religious sites.</li>
+                            <li><span class="fa-li"><i class="fas fa-calendar-check"></i></span>Lastly, try to book accommodations and attractions in advance during peak seasons to avoid crowds and long wait times.</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a href="https://www.tripadvisor.com.my/Tourism-g298277-Johor-Vacations.html" target="_blank">Tripadvisor</a></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="https://tourismjohor.my/" class="btn btn-primary me-2" target="_blank">
+                    <i class="fas fa-external-link-alt me-1"></i> Official Tourism Site
+                </a>
+                <a href="https://www.tripadvisor.com.my/Tourism-g298277-Johor-Vacations.html" class="btn btn-outline-primary me-2" target="_blank">
+                    <i class="fas fa-map-marked-alt me-1"></i> Travel Guide and Advice
+                </a>
+                <a href="https://www.klook.com/en-MY/experiences/list/johor-bahru-cultural-experiences/c191-cate122/" class="btn btn-outline-primary" target="_blank">
+                    <i class="fas fa-info-circle me-1"></i> More Tips
+                </a>
+                <a href="https://gojohor.my/top-johor-food/" class="btn btn-primary me-2" target="_blank">
+                    <i class="fas fa-utensils me-1"></i> Food Guides
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4>Explore Malaysia</h4>
+                    <p class="mt-3">Your ultimate guide to discovering the beauty, culture, and adventure that Malaysia
+                        has to offer.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled mt-3">
+                        <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
+                        <li class="mb-2"><a href="gallery.html" class="text-white">Gallery</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white">Contact Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Travel Tips</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4>Contact Info</h4>
+                    <ul class="list-unstyled mt-3">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Kuala Lumpur, Malaysia</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +60 3-1234 5678</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@exploremalaysia.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 bg-light">
+            <div class="text-center pt-3">
+                <p>&copy; 2025 Explore Malaysia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.social-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevents scroll to top
+                console.log("Social icon clicked!");
+            });
+        });
+    </script>
+
+     <!-- custom JS -->
+     <script src="johor.js"></script>
+
+     <!-- Bootstrap JavaScript for interactivity -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+     <!-- Counting number -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200;
+            let triggered = false;
+
+            const runCounters = () => {
+                counters.forEach(counter => {
+                    const target = parseFloat(counter.getAttribute('data-target'));
+
+                    const updateCount = () => {
+                        const current = parseFloat(counter.innerText);
+                        const increment = target / speed;
+
+                        if (current < target) {
+                            const next = current + increment;
+                            counter.innerText = (target % 1 !== 0)
+                                ? next.toFixed(2)
+                                : Math.ceil(next);
+                            setTimeout(updateCount, 20);
+                        } else {
+                            counter.innerText = (target % 1 !== 0)
+                                ? target.toFixed(2)
+                                : target.toLocaleString();
+                        }
+                    };
+
+                    updateCount();
+                });
+            };
+
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !triggered) {
+                        triggered = true;
+                        runCounters();
+                        obs.disconnect(); // Stop observing once triggered
+                    }
+                });
+            }, {
+                threshold: 0.4 // Trigger when ~40% of the box is visible
+            });
+
+            // Observe the stats box
+            const statsBox = document.querySelector('.stats-box');
+            if (statsBox) {
+                observer.observe(statsBox);
+            }
+        });
+    </script>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+</body>
+
+</html>
+
