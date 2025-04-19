@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+
+
+    <meta charset="UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Discover Selangor - Explore Malaysia</title>
+    
+
+  
+
+    <!-- Bootstrap CSS for styling and responsiveness -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome for icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts for better typography -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="selangor/Favicon.ico.jpg" type="image/x-icon">
+
+
+
+
+    <!-- Custom CSS file for additional styling -->
+
+    <link rel="stylesheet" href="penang.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ========== NAVIGATION BAR ========== -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top custom-navbar shadow">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="home.html">
+                <i class="fas fa-car-side me-2 fs-3 text-light"></i>
+                <span class="fw-bold">Explore Selangor</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="destinationsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Destinations
+                        </a>
+                        <ul class="dropdown-menu shadow-sm" aria-labelledby="destinationsDropdown">
+                            <li><a class="dropdown-item" href="sabah.html">Sabah</a></li>
+                            <li><a class="dropdown-item" href="johor.html">Johor</a></li>
+                            <li><a class="dropdown-item" href="penang.html">Penang</a></li>
+                            <li><a class="dropdown-item" href="perak.html">Perak</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section with background image -->
+    <header id="hero" class="hero-section" style="background-image: url('selangor/1.jpg');">
+        <div class="container text-white">
+            <h1>Explore the Wonders of Selangor</h1>
+            <p>Discover the diverse culture, stunning natural landscapes, and delicious local cuisine that make Selangor
+                a must-visit destination.</p>
+
+        </div>
+    </header>
+
+    <script>
+        const images = [
+            'selangor/1.jpg',
+            'selangor/2.webp',
+            'selangor/3.jpg',
+            'selangor/skymirror.jpg',
+            'selangor/botanicgarden.jpg'
+
+        ];
+        let index = 0;
+
+        setInterval(() => {
+            index = (index + 1) % images.length;
+            document.getElementById('hero').style.backgroundImage = `url('${images[index]}')`;
+        }, 3000); // Change every 3 seconds
+    </script>
+
+
+
+    <!-- Navigation Buttons -->
+    <div class="navigation-buttons d-flex justify-content-center gap-3 flex-wrap my-5">
+        <a href="#history" class="nav-btn btn btn-outline-primary shadow-lg">History</a>
+        <a href="#attractions" class="nav-btn btn btn-outline-success shadow-lg">Attractions</a>
+        <a href="#food" class="nav-btn btn btn-outline-danger shadow-lg">Food</a>
+        <a href="#hotels" class="nav-btn btn btn-outline-warning shadow-lg">Hotels</a>
+        <a href="#travel-tips" class="nav-btn btn btn-outline-info shadow-lg">Travel Tips</a>
+    </div>
+
+         
+
+    <!-- Why Visit Selangor Section -->
+    <section id="about-selangor" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Column: Content -->
+                <div class="col-lg-6">
+                    <div class="about-content pe-lg-4">
+                        <h2 class="section-title mb-4 text-dark fw-bold">Discover the Heart of Malaysia</h2>
+                        <p class="lead text-muted mb-4">Selangor, a vibrant state that blends modernity with tradition,
+                            offers an exciting range of attractions, including cultural landmarks, nature reserves, and
+                            great food.</p>
+
+                        <div class="features mt-4">
+                            <!-- Cultural Heritage Feature -->
+                            <div class="feature-item d-flex align-items-start mb-4">
+                                <div class="icon-box me-4 text-primary">
+                                    <i class="fas fa-city fa-3x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-dark fw-semibold">Cultural Heritage</h4>
+                                    <p class="text-muted">Explore Shah Alam, the state capital, home to beautiful
+                                        mosques, lush parks, and cultural sites that represent the rich heritage of
+                                        Selangor.</p>
+                                </div>
+                            </div>
+
+                            <!-- Food Paradise Feature -->
+                            <div class="feature-item d-flex align-items-start mb-4">
+                                <div class="icon-box me-4 text-primary">
+                                    <i class="fas fa-utensils fa-3x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-dark fw-semibold">Food Paradise</h4>
+                                    <p class="text-muted">Selangor is known for its delicious local dishes and vibrant
+                                        street food scene. From nasi lemak to satay, it's a food lover's dream.</p>
+                                </div>
+                            </div>
+
+                            <!-- Nature and Adventure Feature -->
+                            <div class="feature-item d-flex align-items-start">
+                                <div class="icon-box me-4 text-primary">
+                                    <i class="fas fa-water fa-3x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-dark fw-semibold">Nature and Adventure</h4>
+                                    <p class="text-muted">Explore the lush rainforests of Taman Negara, go for a hike in
+                                        Bukit Broga, or enjoy the beautiful beaches of Morib.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Image -->
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <img src="selangor/icity.webp" alt="icity" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-selangor" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Column: Image -->
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <img src="selangor/circuit.jpg" alt="circuit" class="img-fluid rounded shadow-lg">
+                </div>
+                <!-- Right Column: Content -->
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="stats-box p-4 shadow-sm bg-white rounded">
+                        <h3 class="text-center mb-4">Selangor at a Glance</h3>
+                        <div class="row text-center">
+                            <!-- Area -->
+                            <div class="col-6 mb-4">
+                                <div class="stat-item">
+                                    <div class="stat-number text-primary counter" data-target="8104">1</div>
+                                    <div class="stat-label">km² Area</div>
+                                </div>
+                            </div>
+                            <!-- Population -->
+                            <div class="col-6 mb-4">
+                                <div class="stat-item">
+                                    <div class="stat-number text-primary counter" data-target="6.5">1</div>
+                                    <div class="stat-label">Million People</div>
+                                </div>
+                            </div>
+                            <!-- Heritage Sites -->
+                            <div class="col-6 mb-4">
+                                <div class="stat-item">
+                                    <div class="stat-number text-primary counter" data-target="4">1</div>
+                                    <div class="stat-label">Landmarks</div>
+                                </div>
+                            </div>
+                            <!-- Beaches -->
+                            <div class="col-6 mb-4">
+                                <div class="stat-item">
+                                    <div class="stat-number text-primary counter" data-target="4">1</div>
+                                    <div class="stat-label">Beautiful Beaches</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-3">
+                            <a href="gallery.html" class="btn btn-outline-primary">Explore Gallery</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Callout for Selangor History -->
+    <div id="history" class="row justify-content-center mt-5">
+        <div class="col-md-10 col-lg-8">
+            <div class="p-5 text-center rounded-4 shadow-lg position-relative overflow-hidden text-dark"
+                style="background: linear-gradient(135deg, #f3f9ff, #e0f0ff); border-left: 6px solid #0d6efd;">
+                <div class="position-absolute top-0 start-0 w-100 h-100"
+                    style="background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(3px); z-index: 0;"></div>
+                <div class="position-relative z-1">
+                    <div class="mb-3">
+                        <i class="fas fa-landmark fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold mb-2">Curious About Selangor's Legacy?</h4>
+                    <p class="text-muted mb-4">Explore Selangor’s rich heritage, royal roots, and dynamic cultural
+                        evolution.</p>
+                    <button type="button" class="btn btn-primary px-4 py-2 fw-semibold shadow-sm transition-transform"
+                        data-bs-toggle="modal" data-bs-target="#selangorHistoryModal">
+                        Learn About Selangor's History
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Fade for Selangor History -->
+    <div class="modal fade" id="selangorHistoryModal" tabindex="-1" aria-labelledby="selangorHistoryLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content shadow-lg border-0 rounded-4">
+
+                <!-- Modal Header -->
+                <div class="modal-header bg-gradient text-white rounded-top-4"
+                    style="background: linear-gradient(to right, #2b5876, #4e4376);">
+                    <h5 class="modal-title fw-bold" id="selangorHistoryLabel">A Glimpse into Selangor's History</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body p-4">
+                    <img src="selangor/selangorhistory.jpg" alt="Selangor History"
+                        class="img-fluid rounded mb-4 shadow-sm" />
+
+                    <p class="lead text-muted mb-4">
+                        From royal beginnings to modern marvels, Selangor is a land of tradition, progress, and cultural
+                        richness.
+                    </p>
+
+                    <!-- Timeline -->
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-3 text-primary"><i class="fas fa-history me-2"></i>Timeline Highlights:
+                        </h6>
+                        <ul class="list-unstyled ps-3">
+                            <li class="mb-3">
+                                <i class="fas fa-crown me-2 text-warning"></i>
+                                <strong>1766</strong> – Selangor becomes an independent sultanate.
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-industry me-2 text-secondary"></i>
+                                <strong>19th Century</strong> – Tin mining boom brings economic and demographic growth.
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-city me-2 text-info"></i>
+                                <strong>1974</strong> – Kuala Lumpur becomes a Federal Territory; Shah Alam is declared
+                                state capital.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Cultural Landmarks -->
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-3 text-danger"><i class="fas fa-map-marker-alt me-2"></i>Historic
+                            Landmarks:</h6>
+                        <div class="row row-cols-2 g-3">
+                            <div class="col"><i class="fas fa-check-circle text-success me-2"></i>Sultan Salahuddin
+                                Abdul Aziz Mosque</div>
+                            <div class="col"><i class="fas fa-check-circle text-success me-2"></i>Klang Royal Town</div>
+                            <div class="col"><i class="fas fa-check-circle text-success me-2"></i>Melawati Hill</div>
+                            <div class="col"><i class="fas fa-check-circle text-success me-2"></i>Carey Island Mah Meri
+                                Cultural Village</div>
+                        </div>
+                    </div>
+
+                    <!-- Festivals -->
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-3 text-success"><i class="fas fa-bahai me-2"></i>Iconic Cultural
+                            Festivals:</h6>
+                        <ul class="list-unstyled text-muted">
+                            <li><i class="fas fa-star text-warning me-2"></i>Selangor International Indigenous Arts
+                                Festival</li>
+                            <li><i class="fas fa-star text-warning me-2"></i>Bon Odori Festival, Shah Alam</li>
+                            <li><i class="fas fa-star text-warning me-2"></i>Deepavali Celebration in Klang</li>
+                            <li><i class="fas fa-star text-warning me-2"></i>Ramadan Bazaars</li>
+                        </ul>
+                    </div>
+
+                    <!-- Cuisine Section -->
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-3 text-warning"><i class="fas fa-utensils me-2"></i>Signature Cuisine:
+                        </h6>
+                        <p class="text-muted">Selangor boasts a flavorful mix of Malay, Indian, and Chinese culinary
+                            traditions. Try these favorites:</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item badge bg-secondary me-2 mb-2">Satay Kajang</li>
+                            <li class="list-inline-item badge bg-secondary me-2 mb-2">Bak Kut Teh (Klang)</li>
+                            <li class="list-inline-item badge bg-secondary me-2 mb-2">Nasi Ambeng</li>
+                            <li class="list-inline-item badge bg-secondary me-2 mb-2">Hokkien Mee</li>
+                            <li class="list-inline-item badge bg-secondary me-2 mb-2">Roti Canai</li>
+                        </ul>
+                    </div>
+
+                    <!-- Heritage Quote -->
+                    <div class="mb-4">
+                        <blockquote class="blockquote px-4 py-3 bg-light border-start border-4 border-primary rounded">
+                            <p class="mb-0 fst-italic text-dark">"Selangor stands where royal tradition meets vibrant
+                                modern life."</p>
+                            <footer class="blockquote-footer mt-2">Cultural Anthropologist, 2021</footer>
+                        </blockquote>
+                    </div>
+
+                    <!-- Final Note -->
+                    <p class="text-muted">
+                        Selangor’s story is one of resilience, diversity, and innovation—reflected in its architecture,
+                        festivals, and people.
+                    </p>
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="modal-footer bg-light rounded-bottom-4">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="https://selangor.travel/a-brief-history-of-selangor/" target="_blank"
+                        class="btn btn-primary">
+                        Explore More at Selangor.Travel
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--  Callout Box Section -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="callout-box p-5 rounded-4 shadow-lg text-white position-relative overflow-hidden"
+                style="background: linear-gradient(135deg, #4e54c8, #8f94fb);">
+
+                <!-- Animated Glow Background Effect -->
+                <div class="position-absolute top-0 start-0 w-100 h-100"
+                    style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(2px); z-index: 0;"></div>
+
+                <div class="d-md-flex align-items-center justify-content-between position-relative z-1">
+                    <div class="mb-4 mb-md-0">
+                        <h3 class="fw-bold mb-2"><i class="fas fa-map-marked-alt me-2"></i>Ready to Explore Selangor?
+                        </h3>
+                        <p class="mb-0 fs-5">Discover a land where tradition meets modern thrill – plan your next
+                            journey in Malaysia's vibrant heartland.</p>
+                    </div>
+                    <a href="#" class="btn btn-outline-light px-4 py-2 fw-semibold rounded-pill shadow-sm transition"
+                        style="transition: all 0.3s ease-in-out;">
+                        Explore More
+                        <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Top Attractions Section -->
+    <section id="attractions" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Top Attractions in Selangor</h2>
+
+            <!-- First Row of Attractions -->
+            <div class="row">
+                <!-- First Attraction: Batu Caves -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="selangor/batucave.jpg" class="card-img-top" alt="Batu Caves">
+                        <div class="card-body">
+                            <h3 class="card-title">Batu Caves</h3>
+                            <p class="card-text">Iconic Hindu shrine with a towering Lord Murugan statue and limestone
+                                caves.</p>
+                            <p><strong>Phone:</strong> +60 3-6189 6284</p>
+                            <p><strong>Hours:</strong> Daily, 6:00 AM – 9:00 PM</p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/search/?q=Batu+Caves,+Gombak,+68100+Batu+Caves,+Selangor,+Malaysia"
+                                    target="_blank">Gombak, 68100 Batu Caves, Selangor, Malaysia</a></p>
+                            <p><strong>Website:</strong> <a
+                                    href="https://www.malaysia.travel/en/ae/places/states-of-malaysia/selangor/batu-caves"
+                                    target="_blank">Batu Caves Website</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Attraction: National Botanical Garden -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="selangor/botanicgarden.jpg" class="card-img-top" alt="National Botanical Garden">
+                        <div class="card-body">
+                            <h3 class="card-title">National Botanical Garden</h3>
+                            <p class="card-text">Eco-park with scenic landscapes, cycling trails, and animal farms.</p>
+                            <p><strong>Phone:</strong> +60 3-5510 6922</p>
+                            <p><strong>Hours:</strong> Tues–Sun: 7:30 AM – 5:00 PM (Closed Monday)</p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/search/?q=Bukit+Cahaya+Seri+Alam,+40000+Shah+Alam,+Selangor"
+                                    target="_blank">Bukit Cahaya Seri Alam, 40000 Shah Alam, Selangor</a></p>
+                            <p><strong>Website:</strong> <a href="https://www.tbnsa.gov.my" target="_blank">National
+                                    Botanical Garden Website</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Attraction: Sultan Salahuddin Abdul Aziz Mosque -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="selangor/bluemosque.jpg" class="card-img-top"
+                            alt="Sultan Salahuddin Abdul Aziz Mosque">
+                        <div class="card-body">
+                            <h3 class="card-title">Sultan Salahuddin Abdul Aziz Mosque (Blue Mosque)</h3>
+                            <p class="card-text">Malaysia’s largest mosque with stunning Islamic architecture and blue
+                                dome.</p>
+                            <p><strong>Phone:</strong> +60 3-5519 9988</p>
+                            <p><strong>Hours:</strong> 9:00 AM – 12:00 PM, 2:00 PM – 4:00 PM, 5:30 PM – 6:30 PM</p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/search/?q=Persiaran+Masjid,+Seksyen+5,+40000+Shah+Alam,+Selangor"
+                                    target="_blank">Persiaran Masjid, Seksyen 5, 40000 Shah Alam, Selangor</a></p>
+                            <p><strong>Website:</strong> <a href="https://www.mssaas.gov.my" target="_blank">Blue Mosque
+                                    Website</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Row of Attractions -->
+            <div class="row">
+                <!-- Fourth Attraction: Sepang International Circuit -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="selangor/circuit.jpg" class="card-img-top" alt="Sepang International Circuit">
+                        <div class="card-body">
+                            <h3 class="card-title">Sepang International Circuit</h3>
+                            <p class="card-text">Premier motorsport venue hosting Formula 1, MotoGP, and other events.
+                            </p>
+                            <p><strong>Phone:</strong> +60 3-8778 2200</p>
+                            <p><strong>Hours:</strong> Mon–Fri: 9:00 AM – 6:00 PM</p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/search/?q=Jalan+Pekeliling,+64000+Sepang,+Selangor"
+                                    target="_blank">Jalan Pekeliling, 64000 Sepang, Selangor</a></p>
+                            <p><strong>Website:</strong> <a href="https://www.sepangcircuit.com" target="_blank">Sepang
+                                    Circuit Website</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fifth Attraction: i-City Shah Alam -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="selangor/icity.webp" class="card-img-top" alt="i-City Shah Alam">
+                        <div class="card-body">
+                            <h3 class="card-title">i-City Shah Alam</h3>
+                            <p class="card-text">Urban theme park famous for LED light displays, Snowalk, and Ferris
+                                wheel.</p>
+                            <p><strong>Phone:</strong> +60 3-5521 8800</p>
+                            <p><strong>Hours:</strong> Daily 10:00 AM – 12:00 AM</p>
+                            <p><strong>Website:</strong> <a href="https://iticket.i-city.my" target="_blank">i-City
+                                    Website</a></p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/search/?q=i-City,+40000+Shah+Alam,+Selangor"
+                                    target="_blank">i-City, 40000 Shah Alam, Selangor</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sixth Attraction: Kuala Selangor Nature Park -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="selangor/naturepark.jpg" class="card-img-top" alt="Kuala Selangor Nature Park">
+                        <div class="card-body">
+                            <h3 class="card-title">Kuala Selangor Nature Park</h3>
+                            <p class="card-text">Wetlands sanctuary home to fireflies, eagles, and migratory birds.</p>
+                            <p><strong>Phone:</strong> +60 3-3289 2294</p>
+                            <p><strong>Hours:</strong> Daily 9:00 AM – 6:00 PM</p>
+                            <p><strong>Website:</strong> <a href="https://www.mns.my/kuala-selangor-nature-park"
+                                    target="_blank">Kuala Selangor Nature Park Website</a></p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/search/?q=Jalan+Klinik,+Taman+Alam,+45000+Kuala+Selangor"
+                                    target="_blank">Jalan Klinik, Taman Alam, 45000 Kuala Selangor</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Row of Attractions -->
+            <div class="row">
+                <!-- Seventh Attraction: Sky Mirror -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="selangor/skymirror.jpg" class="card-img-top" alt="Sky Mirror">
+                        <div class="card-body">
+                            <h3 class="card-title">Sky Mirror, Kuala Selangor</h3>
+                            <p class="card-text">A tidal sandbank that mirrors the sky—great for surreal photos.</p>
+                            <p><strong>Phone:</strong> +60 17-630 1220</p>
+                            <p><strong>Hours:</strong> Tour hours vary by tide (advance booking needed)</p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/search/?q=Jeram,+45800+Kuala+Selangor,+Selangor"
+                                    target="_blank">Jeram, 45800 Kuala Selangor, Selangor</a></p>
+                            <p><strong>Website:</strong> <a href="https://www.skymirrortour.com" target="_blank">Sky
+                                    Mirror Website</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eighth Attraction: Sunway Lagoon -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="selangor/sunwaylagoon.jpg" class="card-img-top" alt="Sunway Lagoon">
+                        <div class="card-body">
+                            <h3 class="card-title">Sunway Lagoon Theme Park</h3>
+                            <p class="card-text">Popular theme park featuring water slides, wildlife, extreme sports &
+                                more.</p>
+                            <p><strong>Phone:</strong> +60 3-5639 0000</p>
+                            <p><strong>Hours:</strong> Daily 10:00 AM – 6:00 PM (Closed Tuesdays)</p>
+                            <p><strong>Website:</strong> <a href="https://sunwaylagoon.com" target="_blank">Sunway
+                                    Lagoon Website</a></p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/search/?q=3,+Jalan+PJS+11/11,+Bandar+Sunway,+47500+Subang+Jaya,+Selangor"
+                                    target="_blank">3, Jalan PJS 11/11, Bandar Sunway, 47500 Subang Jaya, Selangor</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ninth Attraction: Zoo Negara -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="selangor/zoonegara.jpg" class="card-img-top" alt="Zoo Negara">
+                        <div class="card-body">
+                            <h3 class="card-title">Zoo Negara Malaysia</h3>
+                            <p class="card-text">Malaysia’s national zoo, home to over 5,000 animals from more than 400
+                                species, including giant pandas, tigers, and orangutans. It’s a great family-friendly
+                                destination with educational exhibits and wildlife shows.</p>
+                            <p><strong>Phone:</strong> +60 3-4108 3422</p>
+                            <p><strong>Hours:</strong> Daily 9:00 AM – 5:00 PM</p>
+                            <p><strong>Website:</strong> <a href="https://www.zoonegaramalaysia.my" target="_blank">Zoo
+                                    Negara Website</a></p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/search/?q=Zoo+Negara,+Hulu+Kelang,+68000+Ampang,+Selangor,+Malaysia"
+                                    target="_blank">Zoo Negara, Hulu Kelang, 68000 Ampang, Selangor, Malaysia</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- A Food Lover’s Guide to Selangor Section -->
+    <section id="food" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">A Food Lover's Guide to Selangor</h2>
+            <div class="container text-center text-primary">
+                <p><strong>Tap to explore the flavors of your choice!</strong></p>
+            </div><br>
+
+            <!-- First row with 2 food items -->
+            <div class="row">
+                <!-- Food Item 1: Bak Kut Teh -->
+                <div class="col-md-6">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="selangor/bakkutteh.jpg" class="card-img-top" alt="Bak Kut Teh">
+                                <div class="card-body">
+                                    <h3 class="card-title">Bak Kut Teh</h3>
+                                    <p class="card-text">A comforting bowl of slow-simmered pork ribs, steeped in a
+                                        fragrant blend of traditional Chinese herbs, garlic, and soy sauce.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i><strong>Restaurant:</strong> Kedai Makanan Teck Teh
+                                </p>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> 27, Jalan Stesen 1,
+                                    41000 Klang</p>
+                                <p><i class="fas fa-clock"></i><strong>Opening Hours:</strong> Daily 7:00 AM – 2:00 PM
+                                </p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> (No official number)</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=27+Jalan+Stesen+1,+41000+Klang,+Selangor"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Item 2: Hokkien Mee -->
+                <div class="col-md-6">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="selangor/hokkienmee.jpg" class="card-img-top" alt="Hokkien Mee">
+                                <div class="card-body">
+                                    <h3 class="card-title">Hokkien Mee</h3>
+                                    <p class="card-text">Thick egg noodles stir-fried in a rich dark soy sauce, tossed
+                                        with juicy pork slices, succulent prawns, and crispy golden lard bits for a
+                                        satisfying bite with every mouthful.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i><strong>Restaurant:</strong> Restoran Ahwa</p>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> 66, Jalan 14/48,
+                                    Seksyen 14, 46100 PJ</p>
+                                <p><i class="fas fa-clock"></i><strong>Opening Hours:</strong> Daily 5:00 PM – 12:00 AM
+                                </p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> (No official number)</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=66+Jalan+14/48,+Seksyen+14,+46100+PJ"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second row with 2 food items -->
+            <div class="row">
+                <!-- Food Item 3: Nasi Ambeng -->
+                <div class="col-md-6">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="selangor/nasiambeng.jpeg" class="card-img-top" alt="Nasi Ambeng">
+                                <div class="card-body">
+                                    <h3 class="card-title">Nasi Ambeng</h3>
+                                    <p class="card-text">JavaA generous platter of fragrant rice served with spiced
+                                        fried chicken, fiery sambal, crunchy anchovies, and springy fried noodles—ideal
+                                        for sharing and steeped in Javanese tradition.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i><strong>Restaurant:</strong> Nasi Ambeng Warisan</p>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> No. 2, Jalan 4,
+                                    Kampung Sungai Merab Luar, 43000 Kajang</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> +60 11-6414 2434</p>
+                                <p><i class="fas fa-info-circle"></i><strong>Details:</strong> Famous for its
+                                    traditional communal style, offering a hearty platter for sharing.</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=No.+2,+Jalan+4,+Kampung+Sungai+Merab+Luar,+43000+Kajang"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Item 4: Nasi Lemak -->
+                <div class="col-md-6">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="selangor/nasilemak.jpg" class="card-img-top" alt="Nasi Lemak">
+                                <div class="card-body">
+                                    <h3 class="card-title">Nasi Lemak</h3>
+                                    <p class="card-text">Malaysia’s beloved national dish featuring coconut milk-infused
+                                        rice, spicy sambal, crispy anchovies, roasted peanuts, boiled egg, and
+                                        cucumber—comforting and full of flavor.
+                                    </p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i><strong>Restaurant:</strong> Village Park Restaurant
+                                </p>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> 5, Jalan SS21/37,
+                                    Damansara Utama, 47400 PJ</p>
+                                <p><i class="fas fa-clock"></i><strong>Opening Hours:</strong> Daily 6:30 AM – 7:30 PM
+                                </p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> +60 3-7710 7860</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=5,+Jalan+SS21/37,+Damansara+Utama,+47400+PJ"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third row with 2 food items -->
+            <div class="row">
+                <!-- Food Item 5: Roti Canai -->
+                <div class="col-md-6">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="selangor/roticanai.jpg" class="card-img-top" alt="Roti Canai">
+                                <div class="card-body">
+                                    <h3 class="card-title">Roti Canai</h3>
+                                    <p class="card-text">A beloved local flatbread, hand-flipped and pan-fried until
+                                        golden and flaky, best enjoyed dipped in creamy dhal or a spicy meat curry for
+                                        the ultimate Malaysian breakfast.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i><strong>Restaurant:</strong> Raju's Restaurant</p>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> Jalan Chantek 5/13,
+                                    Seksyen 5, 46000 PJ</p>
+                                <p><i class="fas fa-clock"></i><strong>Opening Hours:</strong> Daily 7:00 AM – 7:00 PM
+                                </p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> +60 3-7784 8486</p>
+                                <p><i class="fas fa-info-circle"></i><strong>Details:</strong> Known for its crispy and
+                                    delicious roti served with curry or dhal.</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=Jalan+Chantek+5/13,+Seksyen+5,+46000+PJ"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Item 6: Satay Kajang -->
+                <div class="col-md-6">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="selangor/sataykajang.jpg" class="card-img-top" alt="Satay Kajang">
+                                <div class="card-body">
+                                    <h3 class="card-title">Satay Kajang</h3>
+                                    <p class="card-text">Thick, juicy skewers of marinated meat grilled to smoky
+                                        perfection, served with a rich, nutty peanut sauce and a side of cucumber and
+                                        rice cubes—an iconic dish from Kajang.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i><strong>Restaurant:</strong> Restoran Sate Kajang Haji
+                                    Samuri</p>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> Lot 1-11, Medan Sate,
+                                    Jalan Kelab, 43000 Kajang</p>
+                                <p><i class="fas fa-clock"></i><strong>Opening Hours:</strong> Mon–Thu: 11:30 AM – 10:30
+                                    PM, Fri: until 11:00 PM, Sat–Sun: from 12:00 PM</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> +60 3-8737 1853</p>
+                                <p><i class="fas fa-link"></i><strong>Website:</strong> <a
+                                        href="https://www.satekajang.com.my" target="_blank">satekajang.com.my</a></p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=Lot+1-11,+Medan+Sate,+Jalan+Kelab,+43000+Kajang"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- A Hotel Lover’s Guide to Selangor Section -->
+    <section id="hotels" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">A Hotel Lover's Guide to Selangor</h2>
+            <div class="container text-center text-primary">
+                <p><strong>Tap to explore the perfect stay for your trip!</strong></p>
+            </div><br>
+
+            <!-- First row -->
+            <div class="row">
+                <!-- Hotel 1 -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="selangor/majestic.jpg" class="card-img-top"
+                                    alt="The Majestic Hotel Kuala Lumpur">
+                                <div class="card-body">
+                                    <h3 class="card-title">The Majestic Hotel Kuala Lumpur</h3>
+                                    <p class="card-text">A luxurious hotel with colonial-style architecture offering
+                                        elegant rooms and a spa.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 5 Jalan Sultan
+                                    Hishamuddin, 50000 Kuala Lumpur</p>
+                                <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> +60 3-2785 8000</p>
+                                <p><i class="fas fa-globe"></i> <strong>Website:</strong> <a
+                                        href="https://www.majestickl.com" target="_blank">majestickl.com</a></p>
+                                <p><i class="fas fa-clock"></i> <strong>Check-in:</strong> 3:00 PM |
+                                    <strong>Check-out:</strong> 12:00 PM
+                                </p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=5+Jalan+Sultan+Hishamuddin,+50000+Kuala+Lumpur"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 2 -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="selangor/sunwayresort.jpg" class="card-img-top"
+                                    alt="Sunway Resort Hotel & Spa">
+                                <div class="card-body">
+                                    <h3 class="card-title">Sunway Resort Hotel & Spa</h3>
+                                    <p class="card-text">A luxurious resort near Sunway Lagoon with spacious rooms,
+                                        dining options, and a spa.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Persiaran Lagoon,
+                                    Bandar Sunway, 47500 Selangor</p>
+                                <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> +60 3-7492 8000</p>
+                                <p><i class="fas fa-globe"></i> <strong>Website:</strong> <a
+                                        href="https://www.sunwayhotels.com" target="_blank">sunwayhotels.com</a></p>
+                                <p><i class="fas fa-clock"></i> <strong>Check-in:</strong> 3:00 PM |
+                                    <strong>Check-out:</strong> 12:00 PM
+                                </p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=Persiaran+Lagoon,+Bandar+Sunway,+47500+Selangor"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second row -->
+            <div class="row">
+                <!-- Hotel 3 -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="selangor/hilton.jpg" class="card-img-top" alt="Hilton Petaling Jaya">
+                                <div class="card-body">
+                                    <h3 class="card-title">Hilton Petaling Jaya</h3>
+                                    <p class="card-text">A stylish hotel offering modern rooms, a variety of dining
+                                        options, and a swimming pool.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 2, Jalan Barat, 46150
+                                    Petaling Jaya</p>
+                                <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> +60 3-7956 8888</p>
+                                <p><i class="fas fa-globe"></i> <strong>Website:</strong> <a
+                                        href="https://www.hilton.com" target="_blank">hilton.com</a></p>
+                                <p><i class="fas fa-clock"></i> <strong>Check-in:</strong> 3:00 PM |
+                                    <strong>Check-out:</strong> 12:00 PM
+                                </p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=2+Jalan+Barat,+46150+Petaling+Jaya"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 4 -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="selangor/saujana.jpg" class="card-img-top"
+                                    alt="The Saujana Hotel Kuala Lumpur">
+                                <div class="card-body">
+                                    <h3 class="card-title">The Saujana Hotel Kuala Lumpur</h3>
+                                    <p class="card-text">A peaceful resort surrounded by lush greenery and golf courses,
+                                        perfect for relaxation.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Jalan Lapangan
+                                    Terbang SAAS, 40150 Shah Alam</p>
+                                <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> +60 3-7843 1234</p>
+                                <p><i class="fas fa-globe"></i> <strong>Website:</strong> <a
+                                        href="https://www.saujana.com" target="_blank">saujana.com</a></p>
+                                <p><i class="fas fa-clock"></i> <strong>Check-in:</strong> 3:00 PM |
+                                    <strong>Check-out:</strong> 12:00 PM
+                                </p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=Jalan+Lapangan+Terbang+SAAS,+40150+Shah+Alam"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third row -->
+            <div class="row">
+                <!-- Hotel 5 -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="selangor/movenpick.jpg" class="card-img-top"
+                                    alt="Movenpick Hotel & Convention Centre KLIA">
+                                <div class="card-body">
+                                    <h3 class="card-title">Movenpick Hotel & Convention Centre KLIA</h3>
+                                    <p class="card-text">A modern hotel near KLIA with spacious rooms and a convention
+                                        center.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> KLIA, 64000 Sepang
+                                </p>
+                                <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> +60 3-8787 3300</p>
+                                <p><i class="fas fa-globe"></i> <strong>Website:</strong> <a
+                                        href="https://www.movenpick.com" target="_blank">movenpick.com</a></p>
+                                <p><i class="fas fa-clock"></i> <strong>Check-in:</strong> 3:00 PM |
+                                    <strong>Check-out:</strong> 12:00 PM
+                                </p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=KLIA,+64000+Sepang" target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 6 -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="selangor/saujana.jpg" class="card-img-top" alt="The Club Saujana Resort">
+                                <div class="card-body">
+                                    <h3 class="card-title">The Club Saujana Resort</h3>
+                                    <p class="card-text">An exclusive resort offering luxurious rooms, fine dining, and
+                                        beautiful views of golf courses.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Jalan Lapangan
+                                    Terbang SAAS, 40150 Shah Alam</p>
+                                <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> +60 3-7846 1234</p>
+                                <p><i class="fas fa-globe"></i> <strong>Website:</strong> <a
+                                        href="https://www.saujana.com" target="_blank">saujana.com</a></p>
+                                <p><i class="fas fa-clock"></i> <strong>Check-in:</strong> 3:00 PM |
+                                    <strong>Check-out:</strong> 12:00 PM
+                                </p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=Jalan+Lapangan+Terbang+SAAS,+40150+Shah+Alam"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <script>
+        // Wait for the DOM to fully load
+        document.addEventListener('DOMContentLoaded', function () {
+            // Select all cards with class 'card1'
+            const cards = document.querySelectorAll('.card1');
+
+            // Add event listener for each card
+            cards.forEach(card => {
+                card.addEventListener('click', function () {
+                    // Toggle the 'flipped' class
+                    card.classList.toggle('flipped');
+                });
+            });
+        });
+    </script>
+
+
+
+       
+
+    <!-- Travel Tips in Selangor -->
+    <section id="travel-tips" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="section-title text-center">Essential Travel Tips for Selangor</h2>
+            <p class="text-center mb-5">Make the most of your Selangor adventure with these helpful tips</p>
+
+            <div class="row g-4">
+                <!-- First Row -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100">
+                        <div class="tip-icon bg-primary text-white">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Best Time to Visit</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>December to
+                                February for cooler and drier weather</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Plan around
+                                festive seasons like Hari Raya or Chinese New Year for cultural events</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Weekdays are
+                                less crowded at major tourist attractions</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a href="https://www.asiatours.com/Selangor/" target="_blank">Asia
+                                    Tour</a></small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100">
+                        <div class="tip-icon bg-success text-white">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3>Getting Around</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Rent a car
+                                for convenience, especially when visiting suburban and nature spots</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Use the
+                                MRT/LRT/KTM rail network for easy travel around major towns</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Grab is
+                                widely available throughout Selangor</li>
+                            <li><span class="fa-li"><i
+                                        class="fas fa-check-circle text-success"></i></span>Cycle-friendly areas include
+                                Shah Alam and Putrajaya</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a href="https://www.myrapid.com.my/" target="_blank">Rapid KL</a></small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100">
+                        <div class="tip-icon bg-warning text-white">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <h3>Accommodation Advice</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Stay in
+                                Petaling Jaya or Subang Jaya for easy access to malls and food spots</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Luxury
+                                resorts are available in locations like Cyberjaya and Genting Highlands (nearby)</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Homestays
+                                near Kampung Kuantan or Sekinchan offer a rustic getaway</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Book early
+                                during public holidays and school breaks</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a href="https://www.booking.com/" target="_blank">Booking.com</a></small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100 ">
+                        <div class="tip-icon bg-danger text-white">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h3 class="mt-3">Cultural Etiquette</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Dress
+                                modestly when visiting religious sites such as mosques and temples</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Remove shoes
+                                before entering homes and sacred buildings</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Respect local
+                                customs, especially during Ramadan</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a href="https://www.tripsavvy.com/search?q=selangor"
+                                    target="_blank">TripSavvy</a></small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100">
+                        <div class="tip-icon bg-purple text-white ">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3 class="mt-3">Attraction Highlights</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Don’t miss
+                                Batu Caves and i-City Shah Alam for iconic sights</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Nature lovers
+                                can explore Kanching Falls or Taman Botani Negara</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Shop at
+                                Sunway Pyramid or Mitsui Outlet Park for a retail fix</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a href="https://selangor.travel/" target="_blank">Selangor
+                                    Travel</a></small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100 ">
+                        <div class="tip-icon bg-info text-white ">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="mt-3">Food & Dining in Selangor</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Try local
+                                dishes like Satay Kajang, Cendol, and Hokkien Mee</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Visit night
+                                markets (pasar malam) for authentic street food</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Explore
+                                seafood villages like Tanjung Sepat and Sekinchan</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Enjoy local
+                                coffee shops and modern cafes across towns</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a href="https://guide.michelin.com/my/en/kuala-lumpur-region/restaurants"
+                                    target="_blank">Michelin Guide</a></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4>Explore Malaysia</h4>
+                    <p class="mt-3">Your ultimate guide to discovering the beauty, culture, and adventure that Malaysia
+                        has to offer.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled mt-3">
+                        <li class="mb-2"><a href="home.html" class="text-white">Home</a></li>
+                        <li class="mb-2"><a href="gallery.html" class="text-white">Gallery</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white">Contact Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Travel Tips</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4>Contact Info</h4>
+                    <ul class="list-unstyled mt-3">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Kuala Lumpur, Malaysia</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +60 3-1234 5678</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@exploremalaysia.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 bg-light">
+            <div class="text-center pt-3">
+                <p>&copy; 2025 Explore Malaysia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.social-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevents scroll to top
+                console.log("Social icon clicked!");
+            });
+        });
+    </script>
+
+         <!-- Bootstrap JavaScript for interactivity -->
+
+         
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/penang.js"></script>
+
+
+
+
+     <!-- Counting number -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200;
+            let triggered = false;
+
+            const runCounters = () => {
+                counters.forEach(counter => {
+                    const target = parseFloat(counter.getAttribute('data-target'));
+
+                    const updateCount = () => {
+                        const current = parseFloat(counter.innerText);
+                        const increment = target / speed;
+
+                        if (current < target) {
+                            const next = current + increment;
+                            counter.innerText = (target % 1 !== 0)
+                                ? next.toFixed(2)
+                                : Math.ceil(next);
+                            setTimeout(updateCount, 20);
+                        } else {
+                            counter.innerText = (target % 1 !== 0)
+                                ? target.toFixed(2)
+                                : target.toLocaleString();
+                        }
+                    };
+
+                    updateCount();
+                });
+            };
+
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !triggered) {
+                        triggered = true;
+                        runCounters();
+                        obs.disconnect(); // Stop observing once triggered
+                    }
+                });
+            }, {
+                threshold: 0.4 // Trigger when ~40% of the box is visible
+            });
+
+            // Observe the stats box
+            const statsBox = document.querySelector('.stats-box');
+            if (statsBox) {
+                observer.observe(statsBox);
+            }
+        });
+    </script>
+
+
+
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+       
+
+</body>
+
+
+
+</html>

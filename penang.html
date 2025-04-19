@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Penang - Explore Malaysia</title>
+
+    <!-- Bootstrap CSS (use the latest stable version) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome (latest stable version) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="penang/Favicon.ico.jpg" type="image/x-icon">
+
+
+    <!-- Custom CSS file for additional styling -->
+
+
+    <link rel="stylesheet" href="penang.css">
+
+
+</head>
+
+
+
+<body>
+
+
+    <!-- ========== NAVIGATION BAR ========== -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top custom-navbar shadow">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="home.html">
+                <i class="fas fa-car-side me-2 fs-3 text-light"></i>
+                <span class="fw-bold">Explore Penang</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="destinationsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Destinations
+                        </a>
+                        <ul class="dropdown-menu shadow-sm" aria-labelledby="destinationsDropdown">
+                            <li><a class="dropdown-item" href="sabah.html">Sabah</a></li>
+                            <li><a class="dropdown-item" href="johor.html">Johor</a></li>
+                            <li><a class="dropdown-item" href="selangor.html">Selangor</a></li>
+                            <li><a class="dropdown-item" href="perak.html">Perak</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Hero Section with background image -->
+    <header id="hero" class="hero-section" style="background-image: url('penang/1.jpg');">
+        <div class="container text-white">
+            <h1>Explore the Wonders of Penang</h1>
+            <p>Uncover the rich heritage, colorful street art, and world-famous street food that make Penang truly
+                unforgettable.</p>
+        </div>
+    </header>
+
+    <script>
+        const images = [
+            'penang/5.jpg',
+            'penang/2.jpg',
+            'penang/3.jpg',
+            'penang/4.jpg',
+            'penang/1.jpg'
+
+        ];
+        let index = 0;
+
+        setInterval(() => {
+            index = (index + 1) % images.length;
+            document.getElementById('hero').style.backgroundImage = `url('${images[index]}')`;
+        }, 2000); // Change every 2 seconds
+    </script>
+
+
+    <!-- Navigation Buttons -->
+    <div class="navigation-buttons d-flex justify-content-center gap-3 flex-wrap my-5">
+        <a href="#history" class="nav-btn btn btn-outline-primary shadow-lg">History</a>
+        <a href="#attractions" class="nav-btn btn btn-outline-success shadow-lg">Attractions</a>
+        <a href="#food" class="nav-btn btn btn-outline-danger shadow-lg">Food</a>
+        <a href="#hotels" class="nav-btn btn btn-outline-warning shadow-lg">Hotels</a>
+        <a href="#travel-tips" class="nav-btn btn btn-outline-info shadow-lg">Travel Tips</a>
+    </div>
+
+         
+
+        <!-- Why Visit Penang Section -->
+
+      <section id="about-penang" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Column: Content -->
+                <div class="col-lg-6">
+                    <div class="about-content pe-lg-4">
+                        <h2 class="section-title mb-4 text-dark fw-bold">Discover the Pearl of the Orient</h2>
+                        <p class="lead text-muted mb-4">Penang, often called Malaysia's food and cultural capital,
+                            offers a unique blend of history, modernity, and unforgettable flavors.</p>
+
+                        <div class="features mt-4">
+                            <!-- UNESCO Heritage City Feature -->
+                            <div class="feature-item d-flex align-items-start mb-4">
+                                <div class="icon-box me-4 text-primary">
+                                    <i class="fas fa-city fa-3x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-dark fw-semibold">UNESCO Heritage City</h4>
+                                    <p class="text-muted">Explore George Town, a vibrant city filled with colonial
+                                        buildings, colorful murals, and rich multicultural heritage.</p>
+                                </div>
+                            </div>
+
+                            <!-- Food Heaven Feature -->
+                            <div class="feature-item d-flex align-items-start mb-4">
+                                <div class="icon-box me-4 text-primary">
+                                    <i class="fas fa-utensils fa-3x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-dark fw-semibold">Food Heaven</h4>
+                                    <p class="text-muted">From char kway teow to asam laksa, Penang is famous for
+                                        its
+                                        mouth-watering street food and hawker culture.</p>
+                                </div>
+                            </div>
+
+                            <!-- Scenic Beauty Feature -->
+                            <div class="feature-item d-flex align-items-start">
+                                <div class="icon-box me-4 text-primary">
+                                    <i class="fas fa-water fa-3x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-dark fw-semibold">Scenic Beauty</h4>
+                                    <p class="text-muted">Relax at Batu Ferringhi beach, hike through Penang
+                                        National
+                                        Park, or enjoy the panoramic views from Penang Hill.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Image -->
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <img src="penang/1.jpg" alt="1" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about-penang" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Column: Image -->
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <img src="penang/7.jpg" alt="Penang Image" class="img-fluid rounded shadow-lg" />
+                </div>
+                <!-- Right Column: Content -->
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="stats-box p-4 shadow-sm bg-white rounded">
+                        <h3 class="text-center mb-4">Penang at a Glance</h3>
+                        <div class="row text-center">
+                            <!-- Area -->
+                            <div class="col-6 mb-4">
+                                <div class="stat-item">
+                                    <div class="stat-number text-primary counter" data-target="1049">1</div>
+                                    <div class="stat-label">km² Area</div>
+                                </div>
+                            </div>
+                            <!-- Population -->
+                            <div class="col-6 mb-4">
+                                <div class="stat-item">
+                                    <div class="stat-number text-primary counter" data-target="1.74">1</div>
+                                    <div class="stat-label">Million People</div>
+                                </div>
+                            </div>
+                            <!-- Heritage Sites -->
+                            <div class="col-6 mb-4">
+                                <div class="stat-item">
+                                    <div class="stat-number text-primary counter" data-target="1">1</div>
+                                    <div class="stat-label">UNESCO Heritage Sites</div>
+                                </div>
+                            </div>
+                            <!-- Beaches -->
+                            <div class="col-6 mb-4">
+                                <div class="stat-item">
+                                    <div class="stat-number text-primary counter" data-target="5">1</div>
+                                    <div class="stat-label">Beaches</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-3">
+                            <a href="gallery.html" class="btn btn-outline-primary">Explore Gallery</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--  Callout for Penang History -->
+    <div id="history" class="row justify-content-center mt-5">
+        <div class="col-md-10 col-lg-8">
+            <div class="p-5 text-center rounded-4 shadow-lg position-relative overflow-hidden text-dark"
+                style="background: linear-gradient(135deg, #f3f9ff, #e0f0ff); border-left: 6px solid #0d6efd;">
+                <div class="position-absolute top-0 start-0 w-100 h-100"
+                    style="background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(3px); z-index: 0;"></div>
+                <div class="position-relative z-1">
+                    <div class="mb-3">
+                        <i class="fas fa-landmark fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold mb-2">Curious About Penang's Past?</h4>
+                    <p class="text-muted mb-4">Step into a world of heritage, culture, and timeless tales that
+                        shaped
+                        Penang.</p>
+                    <button type="button" class="btn btn-primary px-4 py-2 fw-semibold shadow-sm transition-transform"
+                        data-bs-toggle="modal" data-bs-target="#penangHistoryModal">
+                        Learn About Penang's History
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--  Modal Fade for Penang History -->
+    <div class="modal fade" id="penangHistoryModal" tabindex="-1" aria-labelledby="penangHistoryLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content shadow-lg border-0 rounded-4">
+
+                <!-- Modal Header -->
+                <div class="modal-header bg-gradient text-white rounded-top-4"
+                    style="background: linear-gradient(to right, #2b5876, #4e4376);">
+                    <h5 class="modal-title fw-bold" id="penangHistoryLabel">A Glimpse into Penang's History</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body p-4">
+                    <img src="penang/penanghistory.jpg" alt="Penang History" class="img-fluid rounded mb-4 shadow-sm" />
+
+                    <p class="lead text-muted mb-4">
+                        Penang’s transformation from a modest fishing island to a vibrant cultural and economic hub
+                        is a
+                        legacy of trade, migration, and harmonious diversity.
+                    </p>
+
+                    <!-- Timeline -->
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-3 text-primary"><i class="fas fa-history me-2"></i>Timeline
+                            Highlights:
+                        </h6>
+                        <ul class="list-unstyled ps-3">
+                            <li class="mb-3">
+                                <i class="fas fa-ship me-2 text-primary"></i>
+                                <strong>1786</strong> – George Town is founded by Captain Francis Light.
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-globe-asia me-2 text-success"></i>
+                                <strong>19th–20th Century</strong> – Penang grows as a major port, drawing diverse
+                                communities.
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-award me-2 text-warning"></i>
+                                <strong>2008</strong> – Recognized as a UNESCO World Heritage Site.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Cultural Landmarks -->
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-3 text-danger"><i class="fas fa-map-marker-alt me-2"></i>Historic
+                            Landmarks:</h6>
+                        <div class="row row-cols-2 g-3">
+                            <div class="col"><i class="fas fa-check-circle text-success me-2"></i>Khoo Kongsi Clan
+                                House
+                            </div>
+                            <div class="col"><i class="fas fa-check-circle text-success me-2"></i>Fort Cornwallis
+                            </div>
+                            <div class="col"><i class="fas fa-check-circle text-success me-2"></i>Blue Mansion</div>
+                            <div class="col"><i class="fas fa-check-circle text-success me-2"></i>Penang Peranakan
+                                Mansion</div>
+                        </div>
+                    </div>
+
+                    <!-- Festivals -->
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-3 text-success"><i class="fas fa-bahai me-2"></i>Iconic Cultural
+                            Festivals:</h6>
+                        <ul class="list-unstyled text-muted">
+                            <li><i class="fas fa-star text-warning me-2"></i>George Town Festival</li>
+                            <li><i class="fas fa-star text-warning me-2"></i>Thaipusam at Waterfall Hill Temple</li>
+                            <li><i class="fas fa-star text-warning me-2"></i>Chinese New Year & Chap Goh Meh</li>
+                            <li><i class="fas fa-star text-warning me-2"></i>Penang Hot Air Balloon Fiesta</li>
+                        </ul>
+                    </div>
+
+                    <!-- Cuisine Section -->
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-3 text-warning"><i class="fas fa-utensils me-2"></i>Heritage Cuisine:
+                        </h6>
+                        <p class="text-muted">Penang’s food scene is legendary—blending Chinese, Malay, Indian, and
+                            Thai
+                            influences. Don't miss:</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item badge bg-secondary me-2 mb-2">Char Koay Teow</li>
+                            <li class="list-inline-item badge bg-secondary me-2 mb-2">Penang Laksa</li>
+                            <li class="list-inline-item badge bg-secondary me-2 mb-2">Nasi Kandar</li>
+                            <li class="list-inline-item badge bg-secondary me-2 mb-2">Hokkien Mee</li>
+                            <li class="list-inline-item badge bg-secondary me-2 mb-2">Cendol</li>
+                        </ul>
+                    </div>
+
+                    <!-- Heritage Quote -->
+                    <div class="mb-4">
+                        <blockquote class="blockquote px-4 py-3 bg-light border-start border-4 border-primary rounded">
+                            <p class="mb-0 fst-italic text-dark">"To walk through Penang is to walk through
+                                centuries of
+                                co-existence, color, and culture."</p>
+                            <footer class="blockquote-footer mt-2">Cultural Historian, 2020</footer>
+                        </blockquote>
+                    </div>
+
+                    <!-- Final Note -->
+                    <p class="text-muted">
+                        With every step through its colonial roads and vibrant markets, Penang continues to tell
+                        stories
+                        of resilience, harmony, and progress.
+                    </p>
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="modal-footer bg-light rounded-bottom-4">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="https://pht.org.my/" target="_blank" class="btn btn-primary">
+                        Read More on Penang Heritage Trust
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Enhanced Callout Box Section for Penang -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="callout-box p-5 rounded-4 shadow-lg text-white position-relative overflow-hidden"
+                style="background: linear-gradient(135deg, #4e54c8, #8f94fb);">
+
+                <!-- Soft overlay glow -->
+                <div class="position-absolute top-0 start-0 w-100 h-100"
+                    style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(2px); z-index: 0;"></div>
+
+                <div class="d-md-flex align-items-center justify-content-between position-relative z-1">
+                    <div class="mb-4 mb-md-0">
+                        <h3 class="fw-bold mb-2"><i class="fas fa-umbrella-beach me-2"></i>Ready to Explore Penang?
+                        </h3>
+                        <p class="fs-5 mb-0">Experience the charm of Malaysia’s vibrant island filled with culture,
+                            color, and cuisine.</p>
+                    </div>
+                    <a href="#" class="btn btn-outline-light px-4 py-2 fw-semibold rounded-pill shadow-sm transition"
+                        style="transition: all 0.3s ease-in-out;">
+                        Explore More
+                        <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Top Attractions Section -->
+
+    <section id="attractions" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Top Attractions in Penang</h2>
+            <div class="row">
+                <!-- First Attraction: Batu Ferringhi -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="penang/batuferringih.jpg" class="card-img-top" alt="Batu Ferringhi">
+                        <div class="card-body">
+                            <h3 class="card-title">Batu Ferringhi</h3>
+                            <p class="card-text">Batu Ferringhi is a beach resort located northwest of George Town,
+                                famous for its water sports, resorts, and vibrant night markets.</p>
+                            <p><strong>Phone:</strong> 011-6246 2884</p>
+                            <p><strong>Hours:</strong> Open 24 hours daily</p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/search/?q=Batu+Ferringhi,+Jalan+Batu+Ferringhi,+Batu+Ferringhi,+11100+George+Town,+Pulau+Pinang"
+                                    target="_blank">Jalan Batu Ferringhi, Batu Ferringhi, 11100 George Town, Pulau
+                                    Pinang</a></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+
+                <!-- Second Attraction: Chew Jetty -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="penang/chewjetty.jpg" class="card-img-top" alt="Chew Jetty">
+                        <div class="card-body">
+                            <h3 class="card-title">Chew Jetty</h3>
+                            <p class="card-text">Chew Jetty is a historic waterfront settlement with wooden stilt
+                                houses
+                                built around a walkway.</p>
+                            <p><strong>Phone:</strong> 011-6246 2884</p>
+                            <p><strong>Hours:</strong> Daily 9:00 AM to 9:00 PM</p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/search/?q=Chew+Jetty,+Georgetown,+10300+George+Town,+Penang"
+                                    target="_blank">Georgetown, 10300 George Town, Penang</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Attraction: Entopia -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="penang/entopia.jpg" class="card-img-top" alt="Entopia">
+                        <div class="card-body">
+                            <h3 class="card-title">Entopia by Penang Butterfly Farm</h3>
+                            <p class="card-text">Entopia is a contemporary indoor/outdoor space featuring live
+                                butterflies, other insects, and interactive workshops.</p>
+                            <p><strong>Phone:</strong> 04-888 8111</p>
+
+                            <p><strong>Hours:</strong> Daily 9:00 AM to 5:00 PM</p>
+                            <p><strong>Website:</strong> <a href="https://www.entopia.com/" target="_blank">Entopia
+                                    Website</a></p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/search/?q=830,+Jalan+Teluk+Bahang,+Teluk+Bahang,+11050+Tanjung+Bungah,+Pulau+Pinang"
+                                    target="_blank">830, Jalan Teluk Bahang, Teluk Bahang, 11050 Tanjung Bungah,
+                                    Pulau
+                                    Pinang</a></p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Fourth Attraction: Kek Lok Si -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="penang/kekloksi.jpg" class="card-img-top" alt="Kek Lok Si">
+                        <div class="card-body">
+                            <h3 class="card-title">Kek Lok Si</h3>
+                            <p class="card-text">The largest Buddhist temple in Malaysia, known for its stunning
+                                architecture and panoramic views of Penang.</p>
+                            <p><strong>Phone:</strong> 04-828 3317</p>
+                            <p><strong>Hours:</strong> Everyday 8:30 AM - 5:30 PM</p>
+                            <p><strong>Website:</strong> <a href="https://kekloksitemple.com/" target="_blank">Kek
+                                    Lok
+                                    Si Temple Website</a></p>
+
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/search/?q=Jln+Balik+Pulau,+11500+Ayer+Itam,+Pulau+Pinang"
+                                    target="_blank">Jln Balik Pulau, 11500 Ayer Itam, Pulau Pinang</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fifth Attraction: The Top & Komtar -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="penang/komtar.jpg" class="card-img-top" alt="The Top & Komtar">
+                        <div class="card-body">
+                            <h3 class="card-title">The Top & Komtar</h3>
+                            <p class="card-text">Penang's tallest building offering panoramic views from the
+                                observation
+                                deck, along with a shopping mall and dining options.</p>
+                            <p><strong>Hours:</strong> Daily 10 AM - 10 PM<br>Tuesday 10 AM - 7 PM</p>
+                            <p><strong>Phone:</strong> 017-289 0366</p>
+                            <p><strong>Website:</strong> <a href="https://owg.com.my/business/the-top-penang/"
+                                    target="_blank">The Top Penang Website</a></p>
+
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/search/?q=1,+Jln+Penang,+10000+George+Town,+Pulau+Pinang"
+                                    target="_blank">1, Jln Penang, 10000 George Town, Pulau Pinang</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sixth Attraction: Penang Street Art -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="penang/streetart.jpg" class="card-img-top" alt="Penang Street Art">
+                        <div class="card-body">
+                            <h3 class="card-title">Penang Street Art</h3>
+                            <p class="card-text">Famous for its street art murals, showcasing local culture and
+                                history
+                                through vibrant artwork across Georgetown.</p>
+                            <p><strong>Hours:</strong> Open 24 hours daily</p>
+                            <p><strong>Website:</strong> <a href="https://streetartpenang.com/" target="_blank">Penang
+                                    Street Art Website</a></p>
+
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/search/?q=316,+Beach+St,+Georgetown,+10300+George+Town,+Penang"
+                                    target="_blank">316, Beach St, Georgetown, 10300 George Town, Penang</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seventh Attraction: Goddess Of Mercy Temple -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="penang/kuanyintemple.jpg" class="card-img-top" alt="Goddess Of Mercy Temple">
+                        <div class="card-body">
+                            <h3 class="card-title">Goddess Of Mercy Temple</h3>
+                            <p class="card-text">A historic Chinese temple dedicated to the Goddess of Mercy,
+                                offering
+                                peace and reflection in the heart of Georgetown.</p>
+                            <p><strong>Phone:</strong> 04-226 2645</p>
+                            <p><strong>Hours:</strong> Everyday 7:00 AM - 7:00 PM</p>
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/search/?q=30,+Jln+Masjid+Kapitan+Keling,+George+Town,+10200+George+Town,+Pulau+Pinang"
+                                    target="_blank">30, Jln Masjid Kapitan Keling, George Town, 10200 George Town,
+                                    Pulau
+                                    Pinang</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eighth Attraction: Penang National Park -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="penang/nationalpark.jpg" class="card-img-top" alt="Penang National Park">
+                        <div class="card-body">
+                            <h3 class="card-title">Penang National Park</h3>
+                            <p class="card-text">A nature lover's paradise, home to lush forests, wildlife, hiking
+                                trails, and stunning beaches.</p>
+                            <p><strong>Phone:</strong> 04-881 3530</p>
+                            <p><strong>Hours:</strong> Everyday 8:00 AM - 4:30 PM</p>
+                            <p><strong>Website:</strong> <a
+                                    href="https://www.wildlife.gov.my/index.php/en/11-info/154-penang-national-park"
+                                    target="_blank">Penang National Park Website</a></p>
+
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/search/?q=Pejabat+Taman+Negara+P.+Pinang,+jalan+Hassan+Abbas,+11050+George+Town,+Penang"
+                                    target="_blank">Pejabat Taman Negara P. Pinang, Jalan Hassan Abbas, 11050 George
+                                    Town, Penang</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ninth Attraction: Penang Hill -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="penang/penanghill.jpg" class="card-img-top" alt="Penang Hill">
+                        <div class="card-body">
+                            <h3 class="card-title">Penang Hill</h3>
+                            <p class="card-text">A serene getaway with a cooler climate, offering scenic views,
+                                nature
+                                walks, and colonial-style architecture.</p>
+                            <p><strong>Hours:</strong> 6:15 AM - 9:15 PM</p>
+                            <p><strong>Website:</strong> <a href="https://penanghill.gov.my/index.php/en/"
+                                    target="_blank">Penang Hill Website</a></p>
+
+                            <p><strong>Address:</strong> <a
+                                    href="https://www.google.com/maps/search/?q=11500+Bukit+Bendera,+Penang"
+                                    target="_blank">11500 Bukit Bendera, Penang</a></p>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+
+
+
+    <!-- A Food Lover’s Guide to Penang Section -->
+
+    <section id="food" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">A Food Lover's Guide to Penang</h2>
+            <div class="container text-center text-primary">
+                <p><strong>Tap to explore the flavors of your choice!</strong></p>
+            </div><br>
+
+            <!-- First row with 3 food items -->
+            <div class="row">
+                <!-- Food Item 1: Cendol -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="penang/cendol.jpg" class="card-img-top" alt="Cendol">
+                                <div class="card-body">
+                                    <h3 class="card-title">Cendol</h3>
+                                    <p class="card-text">A beloved Malaysian dessert made with finely shaved ice,
+                                        creamy
+                                        coconut milk, palm sugar syrup, and chewy green rice flour jelly.</p>
+
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i><strong>Restaurant:</strong> Penang Road
+                                    Famous
+                                    Teochew Cendol</p>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> 5 Lebuh
+                                    Keng Kwee,
+                                    George Town, 10100 Penang, Malaysia.</p>
+                                <p><i class="fas fa-clock"></i><strong>Opening Hours:</strong> Monday to
+                                    Tuesday: 9:00
+                                    AM - 5:30 PM; Wednesday: Closed; Thursday to Sunday: 9:00 AM - 5:30 PM.
+                                </p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> Not Available</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=5+Lebuh+Keng+Kwee,+George+Town,+10100+Penang,+Malaysia"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Item 2: Char Kuey Teow -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="penang/charkueyteow.jpg" class="card-img-top" alt="Char Kuey Teow">
+                                <div class="card-body">
+                                    <h3 class="card-title">Char Kuey Teow</h3>
+                                    <p class="card-text">A smoky stir-fried noodle dish cooked over high heat with
+                                        prawns, Chinese sausages, eggs, bean sprouts, and garlic. </p>
+
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Recommended Cafe</h3>
+                                <p><i class="fas fa-utensils"></i><strong>Cafe:</strong> Joo Hooi Café</p>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> 475 Jalan
+                                    Penang,
+                                    George Town, 10000 Penang, Malaysia.</p>
+                                <p><i class="fas fa-clock"></i><strong>Opening Hours:</strong> Daily from
+                                    9:30 AM to
+                                    5:00 PM.</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> +60 14-903 3561
+                                </p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=475+Jalan+Penang,+George+Town,+10000+Penang,+Malaysia"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Item 3: Hokkien Mee -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="penang/hokkienmee.jpg" class="card-img-top" alt="Hokkien Mee">
+                                <div class="card-body">
+                                    <h3 class="card-title">Hokkien Mee</h3>
+                                    <p class="card-text">A rich and savory noodle soup made with a prawn and
+                                        pork-based
+                                        broth, served with yellow noodles, boiled egg, shrimp, and water spinach.
+                                    </p>
+
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-store"></i><strong>Store:</strong> Crab Village</p>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> Kampung
+                                    Melayu, 11900
+                                    Penang, Malaysia</p>
+                                <p><i class="fas fa-clock"></i><strong>Opening Hours:</strong> 9:00 AM -
+                                    3:00 PM (Closed
+                                    on Mondays)</p>
+                                <p><i class="fas fa-info-circle"></i><strong>Details:</strong> Known for its
+                                    flavorful
+                                    broth, this spot is a local favorite for Hokkien Mee.</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> Not Available</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?q=Kampung+Melayu,+11900+Penang,+Malaysia"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End of first row -->
+
+            <!-- Second row with 3 food items -->
+            <div class="row">
+                <!-- Food Item 4: Assam Laksa -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="penang/laksa.jpg" class="card-img-top" alt="Assam Laksa">
+                                <div class="card-body">
+                                    <h3 class="card-title">Assam Laksa</h3>
+                                    <p class="card-text">A tangy and spicy noodle soup with a tamarind-based fish
+                                        broth,
+                                        thick rice noodles, pineapple slices, cucumber, and a spoonful of
+                                        pungent shrimp paste.</p>
+
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i><strong>Restaurant:</strong> Penang Assam
+                                    Laksa</p>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> Air Itam
+                                    Market, 115
+                                    Jalan Pasar, Air Itam, 11500 Penang, Malaysia</p>
+                                <p><i class="fas fa-clock"></i><strong>Opening Hours:</strong> 10:00 AM -
+                                    6:00 PM
+                                    (Closed on Wednesdays)</p>
+                                <p><i class="fas fa-info-circle"></i><strong>Details:</strong> A must-try
+                                    dish for its
+                                    unique tamarind flavor.</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> Not Available</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?q=1+Jalan+Taman+Emas,+Butterworth,+13400+Penang,+Malaysia"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Item 5: Oyster Omelette -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="penang/ohchien.jpeg" class="card-img-top" alt="Oyster Omelette">
+                                <div class="card-body">
+                                    <h3 class="card-title">Oyster Omelette (Oh Chien)</h3>
+                                    <p class="card-text">A crispy, golden omelette filled with juicy oysters and
+                                        starch
+                                        for a slightly chewy texture. Served hot with spicy chili sauce on the
+                                        side.</p>
+
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i><strong>Restaurant:</strong> Kedai Kopi
+                                    Pusat Makanan
+                                    Taman Emas</p>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> 1 Jalan
+                                    Taman Emas,
+                                    Butterworth, 13400 Penang, Malaysia</p>
+                                <p><i class="fas fa-clock"></i><strong>Opening Hours:</strong> 10:00 AM -
+                                    8:00 PM
+                                    (Closed on Wednesdays)</p>
+                                <p><i class="fas fa-info-circle"></i><strong>Details:</strong> Cash only ·
+                                    Popular local
+                                    dish</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> Not Available</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?q=1+Jalan+Taman+Emas,+Butterworth,+13400+Penang,+Malaysia"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Item 6: Nasi Kandar -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="penang/nasikandar.jpg" class="card-img-top" alt="Nasi Kandar">
+                                <div class="card-body">
+                                    <h3 class="card-title">Nasi Kandar</h3>
+                                    <p class="card-text">A hearty Malaysian favorite featuring steamed rice topped
+                                        with
+                                        a variety of curries, fried chicken, beef, or seafood.</p>
+
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i><strong>Restaurant:</strong> Nasi Kandar
+                                    Line Clear
+                                </p>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> 17, Jalan
+                                    Line Clear,
+                                    George Town, 10100 Penang, Malaysia</p>
+                                <p><i class="fas fa-clock"></i><strong>Opening Hours:</strong> Open 24 hours
+                                    daily</p>
+                                <p><i class="fas fa-info-circle"></i><strong>Details:</strong> A must-try
+                                    local dish
+                                    with rich curry flavors</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> Not Available</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?q=17,+Jalan+Line+Clear,+George+Town,+10100+Penang,+Malaysia"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End of second row -->
+
+            <!-- Third row with 3 food items -->
+            <div class="row">
+                <!-- Food Item 7: Lor Bak -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="penang/penanglorbak.png" class="card-img-top" alt="Lor Bak">
+                                <div class="card-body">
+                                    <h3 class="card-title">Lor Bak</h3>
+                                    <p class="card-text">Deep-fried rolls of marinated minced pork wrapped in bean
+                                        curd
+                                        skin, served with chili sauce and thick soy-based dip.</p>
+
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i><strong>Restaurant:</strong> Lorong Baru
+                                    Market</p>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> 3A Lorong
+                                    Baru, George
+                                    Town, 10100 Penang, Malaysia</p>
+                                <p><i class="fas fa-clock"></i><strong>Opening Hours:</strong> 10:00 AM -
+                                    4:00 PM
+                                    (Closed on Sundays)</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> Not Available</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?q=3A+Lorong+Baru,+George+Town,+10100+Penang,+Malaysia"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Item 8: Penang Rojak -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="penang/penangrojak.jpg" class="card-img-top" alt="Penang Rojak">
+                                <div class="card-body">
+                                    <h3 class="card-title">Penang Rojak</h3>
+                                    <p class="card-text">A flavorful mix of fresh fruits and vegetables tossed in
+                                        thick
+                                        prawn paste, crushed peanuts, sugar, and chili.</p>
+
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i><strong>Restaurant:</strong> Sia Boey
+                                    Rojak</p>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> Sia Boey
+                                    Market, 1
+                                    Jalan Sia Boey, George Town, 10300 Penang, Malaysia.</p>
+                                <p><i class="fas fa-clock"></i><strong>Opening Hours:</strong> 9:00 AM -
+                                    5:00 PM (Closed
+                                    Sundays)</p>
+
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> N/A</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=Sia+Boey+Market,+1+Jalan+Sia+Boey,+George+Town,+10300+Penang,+Malaysia"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Item 9: Char Siew -->
+                <div class="col-md-4">
+                    <div class="card1">
+                        <div class="card1-inner">
+                            <div class="card1-front">
+                                <img src="penang/charsiew.jpeg" class="card-img-top" alt="Penang Char Siew">
+                                <div class="card-body">
+                                    <h3 class="card-title">Char Siew</h3>
+                                    <p class="card-text">Juicy, caramelized roast pork marinated in honey, soy
+                                        sauce,
+                                        and Chinese spices. </p>
+
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Click to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1-back">
+                                <h3>Where to Try</h3>
+                                <p><i class="fas fa-utensils"></i><strong>Restaurant:</strong> Hong Kee Char
+                                    Siew</p>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> 113, Jalan
+                                    Macalister,
+                                    10400 George Town, Penang, Malaysia</p>
+                                <p><i class="fas fa-clock"></i><strong>Opening Hours:</strong> 11:00 AM -
+                                    3:00 PM</p>
+                                <p><i class="fas fa-star"></i><strong>Must-try:</strong> Succulent BBQ Pork
+                                    served with
+                                    rice or noodles.</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> Not Available</p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=113,+Jalan+Macalister,+10400+George+Town,+Penang,+Malaysia"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End of third row -->
+        </div>
+    </section>
+
+
+
+    <!-- A Hotel Lover’s Guide to Penang Section -->
+    <section id="hotels" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">A Hotel Lover's Guide to Penang</h2>
+            <div class="container text-center text-primary">
+                <p><strong>Tap to explore the perfect stay for your trip!</strong></p>
+            </div><br>
+
+            <!-- First row with 2 hotel items -->
+            <div class="row">
+                <!-- Hotel 1: Eastern & Oriental Hotel -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="penang/easternhotel.jpg" class="card-img-top" alt="Eastern & Oriental Hotel">
+                                <div class="card-body">
+                                    <h3 class="card-title">Eastern & Oriental Hotel</h3>
+                                    <p class="card-text">A luxurious heritage hotel with elegant rooms, offering
+                                        stunning views of the sea.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> 10, Lebuh
+                                    Farquhar,
+                                    10200 Georgetown</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> +60 4-222 2000</p>
+                                <p><i class="fas fa-globe"></i><strong>Website:</strong> <a
+                                        href="https://www.eohotels.com" target="_blank">eohotels.com</a></p>
+                                <p><i class="fas fa-clock"></i><strong>Check-in:</strong> 3:00 PM |
+                                    <strong>Check-out:</strong> 12:00 PM
+                                </p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=10+Lebuh+Farquhar,+10200+Georgetown"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 2: G Hotel Kelawai -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="penang/ghotel.jpg" class="card-img-top" alt="G Hotel Kelawai">
+                                <div class="card-body">
+                                    <h3 class="card-title">G Hotel Kelawai</h3>
+                                    <p class="card-text">An upscale, modern hotel featuring chic rooms, a rooftop
+                                        pool,
+                                        and an excellent restaurant.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> 2, Persiaran
+                                    Maccalum,
+                                    10250 George Town</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> +60 4-219 0000</p>
+                                <p><i class="fas fa-globe"></i><strong>Website:</strong> <a
+                                        href="https://www.ghotel.com.my" target="_blank">ghotel.com.my</a></p>
+                                <p><i class="fas fa-clock"></i><strong>Check-in:</strong> 3:00 PM |
+                                    <strong>Check-out:</strong> 12:00 PM
+                                </p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=2+Persiaran+Maccalum,+10250+George+Town"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second row with 2 hotel items -->
+            <div class="row">
+                <!-- Hotel 3: The Wembley - A St Giles Hotel -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="penang/wembley.jpg" class="card-img-top" alt="The Wembley - A St Giles Hotel">
+                                <div class="card-body">
+                                    <h3 class="card-title">The Wembley - A St Giles Hotel</h3>
+                                    <p class="card-text">A contemporary hotel with stylish rooms and a full-service
+                                        restaurant, located in the heart of Georgetown.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> 183, Jalan
+                                    Magazine,
+                                    10300 George Town</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> +60 4-229 9000</p>
+                                <p><i class="fas fa-globe"></i><strong>Website:</strong> <a
+                                        href="https://www.stgileshotels.com" target="_blank">stgileshotels.com</a>
+                                </p>
+                                <p><i class="fas fa-clock"></i><strong>Check-in:</strong> 3:00 PM |
+                                    <strong>Check-out:</strong> 12:00 PM
+                                </p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=183+Jalan+Magazine,+10300+George+Town"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 4: Parkroyal Penang Resort -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="penang/parkroyal.jpg" class="card-img-top" alt="Parkroyal Penang Resort">
+                                <div class="card-body">
+                                    <h3 class="card-title">Parkroyal Penang Resort</h3>
+                                    <p class="card-text">A beachfront resort offering spacious rooms, a spa, and a
+                                        variety of dining options.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> Batu Ferringhi
+                                    Beach,
+                                    11100 Batu Ferringhi</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> +60 4-886 2288</p>
+                                <p><i class="fas fa-globe"></i><strong>Website:</strong> <a
+                                        href="https://www.parkroyalhotels.com" target="_blank">parkroyalhotels.com</a>
+                                </p>
+                                <p><i class="fas fa-clock"></i><strong>Check-in:</strong> 3:00 PM |
+                                    <strong>Check-out:</strong> 12:00 PM
+                                </p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=Batu+Ferringhi+Beach,+11100+Batu+Ferringhi"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third row with 2 hotel items -->
+            <div class="row">
+                <!-- Hotel 5: The Southern Hotel -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="penang/southern.jpg" class="card-img-top" alt="The Southern Hotel">
+                                <div class="card-body">
+                                    <h3 class="card-title">The Southern Hotel</h3>
+                                    <p class="card-text">An affordable hotel located near Georgetown, offering
+                                        comfortable rooms and great service.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> 132, Jalan
+                                    Macalister,
+                                    10400 Georgetown</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> +60 4-226 7333</p>
+                                <p><i class="fas fa-globe"></i><strong>Website:</strong> <a
+                                        href="http://www.thesouthernhotel.com" target="_blank">thesouthernhotel.com</a>
+                                </p>
+                                <p><i class="fas fa-clock"></i><strong>Check-in:</strong> 2:00 PM |
+                                    <strong>Check-out:</strong> 12:00 PM
+                                </p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=132+Jalan+Macalister,+10400+Georgetown"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 6: The Edison George Town -->
+                <div class="col-md-6">
+                    <div class="card2">
+                        <div class="card2-inner">
+                            <div class="card2-front">
+                                <img src="penang/edison.webp" class="card-img-top" alt="The Edison George Town">
+                                <div class="card-body">
+                                    <h3 class="card-title">The Edison George Town</h3>
+                                    <p class="card-text">A heritage boutique hotel with modern amenities, located in
+                                        the
+                                        historic area of George Town.</p>
+                                    <div class="text-center mt-2">
+                                        <span class="badge bg-primary">Hover to Flip</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card2-back">
+                                <h3>Hotel Information</h3>
+                                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> 15, Lebuh
+                                    Farquhar,
+                                    10200 George Town</p>
+                                <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> +60 4-263 3333</p>
+                                <p><i class="fas fa-globe"></i><strong>Website:</strong> <a
+                                        href="https://www.theedisonpenang.com" target="_blank">theedisonpenang.com</a>
+                                </p>
+                                <p><i class="fas fa-clock"></i><strong>Check-in:</strong> 3:00 PM |
+                                    <strong>Check-out:</strong> 12:00 PM
+                                </p>
+                                <div class="text-center mt-3">
+                                    <a href="https://www.google.com/maps?daddr=15+Lebuh+Farquhar,+10200+George+Town"
+                                        target="_blank">
+                                        <button class="btn btn-sm btn-outline-primary">View on Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script>
+        // Wait for the DOM to fully load
+        document.addEventListener('DOMContentLoaded', function () {
+            // Select all cards with class 'card1'
+            const cards = document.querySelectorAll('.card1');
+
+            // Add event listener for each card
+            cards.forEach(card => {
+                card.addEventListener('click', function () {
+                    // Toggle the 'flipped' class
+                    card.classList.toggle('flipped');
+                });
+            });
+        });
+    </script>
+
+
+
+
+    <!-- Travel Tips in Penang -->
+    <section id="travel-tips" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="section-title text-center">Essential Travel Tips for Penang</h2>
+            <p class="text-center mb-5">Make the most of your Penang adventure with these helpful tips</p>
+
+            <div class="row g-4">
+                <!-- First Row -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100">
+                        <div class="tip-icon bg-primary text-white">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Best Time to Visit</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Visit
+                                between
+                                November and February for dry and pleasant weather</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Avoid the
+                                rainy season (May to September) to enjoy outdoor spots</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Choose
+                                weekdays for fewer crowds at tourist attractions</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a
+                                    href="https://www.lonelyplanet.com/malaysia/peninsular-malaysia-west-coast/pulau-penang"
+                                    target="_blank">Lonely Planet</a></small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100">
+                        <div class="tip-icon bg-success text-white">
+                            <i class="fas fa-subway"></i>
+                        </div>
+                        <h3>Getting Around</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Use Grab
+                                for
+                                convenient and affordable rides</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>RapidPenang
+                                buses cover most major routes across the island</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Explore
+                                heritage areas like George Town on foot or by bike</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Renting a
+                                car
+                                is great for exploring further attractions</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a href="https://www.tripadvisor.com/Tourism-g298303-Penang-Vacations.html"
+                                    target="_blank">TripAdvisor</a></small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100">
+                        <div class="tip-icon bg-warning text-white">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <h3>Accommodation Advice</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Stay in
+                                George Town for cultural charm and walkability</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Choose
+                                beach
+                                resorts in Batu Ferringhi for ocean views</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Look for
+                                boutique hotels with heritage architecture</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Consider
+                                countryside homestays for local experiences</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a href="https://www.booking.com/region/my/penang.en-gb.html"
+                                    target="_blank">Booking.com</a></small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100">
+                        <div class="tip-icon bg-danger text-white">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3 class="mt-3">Cultural Events & Seasons</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Attend
+                                George
+                                Town Festival in August for arts and culture</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Visit
+                                during
+                                Chinese New Year for colorful street celebrations</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Thaipusam
+                                (January) offers a deeply spiritual and visual spectacle</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a
+                                    href="https://www.lonelyplanet.com/malaysia/peninsular-malaysia-west-coast/pulau-penang"
+                                    target="_blank">Lonely Planet</a></small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100">
+                        <div class="tip-icon bg-purple text-white">
+                            <i class="fas fa-subway"></i>
+                        </div>
+                        <h3 class="mt-3">Transportation Tips</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Trishaws
+                                offer a slow-paced tour of George Town's streets</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Scooters
+                                are
+                                a fun option for confident riders</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Use
+                                LinkBike,
+                                Penang's public bike-sharing system</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a href="https://www.traveloka.com/en-kr/destination/area/penang-107984"
+                                    target="_blank">Traveloka</a></small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card h-100">
+                        <div class="tip-icon bg-info text-white ">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="mt-3">Food & Dining in Penang</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Sample
+                                Char
+                                Kuey Teow, Penang Laksa, and Hokkien Mee</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Experience a
+                                breakfast set at a traditional kopitiam</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Try night
+                                markets for local food and snacks</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>Wrap up
+                                meals
+                                with Penang’s famous Cendol or Ais Kacang</li>
+                        </ul>
+                        <div class="tip-source">
+                            <small>Source: <a href="https://guide.michelin.com/my/en/pulau-pinang/restaurants"
+                                    target="_blank">Michelin Guide</a></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4>Explore Malaysia</h4>
+                    <p class="mt-3">Your ultimate guide to discovering the beauty, culture, and adventure that
+                        Malaysia
+                        has to offer.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled mt-3">
+                        <li class="mb-2"><a href="home.html" class="text-white">Home</a></li>
+                        <li class="mb-2"><a href="gallery.html" class="text-white">Gallery</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white">Contact Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Travel Tips</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4>Contact Info</h4>
+                    <ul class="list-unstyled mt-3">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Kuala Lumpur, Malaysia</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +60 3-1234 5678</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@exploremalaysia.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 bg-light">
+            <div class="text-center pt-3">
+                <p>&copy; 2025 Explore Malaysia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.social-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevents scroll to top
+                console.log("Social icon clicked!");
+            });
+        });
+    </script>
+    <!-- Bootstrap JavaScript for interactivity -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="js/penang.js"></script>
+
+
+
+    <!--Count number-->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200;
+            let triggered = false;
+
+            const runCounters = () => {
+                counters.forEach(counter => {
+                    const target = parseFloat(counter.getAttribute('data-target'));
+
+                    const updateCount = () => {
+                        const current = parseFloat(counter.innerText);
+                        const increment = target / speed;
+
+                        if (current < target) {
+                            const next = current + increment;
+                            counter.innerText = (target % 1 !== 0)
+                                ? next.toFixed(2)
+                                : Math.ceil(next);
+                            setTimeout(updateCount, 20);
+                        } else {
+                            counter.innerText = (target % 1 !== 0)
+                                ? target.toFixed(2)
+                                : target.toLocaleString();
+                        }
+                    };
+
+                    updateCount();
+                });
+            };
+
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !triggered) {
+                        triggered = true;
+                        runCounters();
+                        obs.disconnect(); // Stop observing once triggered
+                    }
+                });
+            }, {
+                threshold: 0.4 // Trigger when ~40% of the box is visible
+            });
+
+            // Observe the stats box
+            const statsBox = document.querySelector('.stats-box');
+            if (statsBox) {
+                observer.observe(statsBox);
+            }
+        });
+    </script>
+
+
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+
+
+
+
+
+
+       
+
+</body>
+
+
+
+</html>
